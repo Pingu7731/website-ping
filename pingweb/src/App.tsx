@@ -1,12 +1,9 @@
+import Hero from "./sections/Hero.tsx";
 const App=()=> {
     return (
-        <main>
-            <div>
-                <h1>
-                    Ping Web
-                </h1>
-            </div>
-        </main>
+      <>
+        <Hero />
+      </>
     )
 }
 export default App
