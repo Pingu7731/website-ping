@@ -1,2 +1,2 @@
-# website-ping
-ping
+# ping
+
