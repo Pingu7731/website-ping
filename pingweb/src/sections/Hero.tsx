@@ -32,9 +32,12 @@ const Hero=()=> {
                     
                 ))}
             </span>
-            </span></h1>
+            </span>
+            </h1>
+           
          
         </div>
+         <p>I do what ever i want :3 </p>
         </div>
         </header>
         {/* right is 3d thingy */}
