@@ -1,3 +1,4 @@
+import Button from "../components/button"
 import { names } from "../constants"
 
 const Hero=()=> {
@@ -38,6 +39,12 @@ const Hero=()=> {
          
         </div>
          <p>I do what ever i want :3 </p>
+         {/* pass param */}
+         <Button
+         className="md:w-80 md:h-16 w-60 h-12"
+         id="button-hero"
+         text="Contact"
+         />
         </div>
         </header>
         {/* right is 3d thingy */}
