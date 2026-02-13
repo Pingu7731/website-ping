@@ -6,7 +6,7 @@ const Button = ({ className, id, text }: { className?: string; id?: string; text
                 <div className="bg-circle" />
                 <p className="text"> {text}</p>
                 <div className="arrow-wrapper">
-                    <img src="./src/images/icon.png" alt="pic" />
+                    <img src="https://shorturl.ad/FEcbK" alt="pic" />
                 </div>
             </div>
         </a>
