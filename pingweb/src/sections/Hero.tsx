@@ -1,4 +1,5 @@
 import Button from "../components/button"
+import { HeroExperience } from "../components/HeroModels/HeroExperience"
 import { names } from "../constants"
 
 const Hero=()=> {
@@ -6,7 +7,7 @@ const Hero=()=> {
       <section id="hero"className="relative overflow-hidden">
         <div className="absolute top-0 left-0 z-10 ">
           
-            <img src="" alt="" className=""/>
+            {/* <img src="" alt="" className=""/> */}
         </div>
 
         {/* hero layout is defined in index.css */}
@@ -43,11 +44,17 @@ const Hero=()=> {
          <Button
          className="md:w-80 md:h-16 w-60 h-12"
          id="button-hero"
-         text="Contact"
+         text="AAAAA"
          />
         </div>
         </header>
+
         {/* right is 3d thingy */}
+        <figure>
+            <div className="hero-3d-layout">
+                <HeroExperience />
+            </div>
+        </figure>
         </div>
 
       </section>
