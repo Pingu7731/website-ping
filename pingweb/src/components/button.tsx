@@ -1,3 +1,5 @@
+import icon from "../images/icon.png"
+
 const Button = ({ className, id, text }: { className?: string; id?: string; text: string }) => {
 
     return (
@@ -6,7 +8,7 @@ const Button = ({ className, id, text }: { className?: string; id?: string; text
                 <div className="bg-circle" />
                 <p className="text"> {text}</p>
                 <div className="arrow-wrapper">
-                    <link rel="icon" type="image/svg+xml" href="./src/images/icon.png" />
+                    <img src={icon} alt="pic" />
                 </div>
             </div>
         </a>
