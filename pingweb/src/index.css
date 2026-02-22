@@ -336,12 +336,12 @@ section {
 }
 
 @keyframes wordSlider {
-  0%   { transform: translateY(-5px); }
-  20%  { transform: translateY(-102px); }
-  40%  { transform: translateY(-200px); }
-  60%  { transform: translateY(-300px); }
-  80%  { transform: translateY(-400px); }
-  100% { transform: translateY(-5px); }
+  0%   { transform: translateY(-0%); }
+  20%  { transform: translateY(-20%); }
+  40%  { transform: translateY(-40%); }
+  60%  { transform: translateY(-60%); }
+  80%  { transform: translateY(-80%); }
+  100% { transform: translateY(-0%); }
 }
 
 /* Hero Text slider ends */

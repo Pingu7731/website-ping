@@ -36,7 +36,7 @@ const Hero=()=> {
             </span>
             </span>
             </h1>
-           
+          
          
         </div>
          <p>I do what ever i want :3 </p>

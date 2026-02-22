@@ -1,9 +1,14 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import { useIsMobile } from "../isMobile";
+import { div } from "three/tsl";
 
 export const HeroExperience= () => {
-    const isMobile= false; // TODO: add mobile detection
+    const isMobile= useIsMobile(); // TODO: add mobile detection
 return(
+    // <div className="text-white">
+    //     test {isMobile ? "mobile" : "desktop"}
+    // </div>
     <Canvas camera={{position:[0,0,15],fov:45}}>
         <ambientLight intensity={0.5} color="#1a1a40" />
         <directionalLight position={[20,15,10]} intensity={5} />
