@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useIsMobile } from "../isMobile";
-import { div } from "three/tsl";
+// import { div } from "three/tsl";
 
 export const HeroExperience= () => {
     const isMobile= useIsMobile(); // TODO: add mobile detection
