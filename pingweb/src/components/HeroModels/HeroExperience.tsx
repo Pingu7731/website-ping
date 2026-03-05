@@ -1,10 +1,13 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { useIsMobile } from "../isMobile";
+// import { useIsMobile } from "../isMobile";
+import { useMediaQuery } from "react-responsive";
 // import { div } from "three/tsl";
 
 export const HeroExperience= () => {
-    const isMobile= useIsMobile(); // TODO: add mobile detection
+    // const isMobile= useMediaQuery({ query: '(max-width: 768px)' });
+    const isTablet= useMediaQuery({ query: '(max-width: 1024px)' });
+
 return(
     // <div className="text-white">
     //     test {isMobile ? "mobile" : "desktop"}
@@ -15,7 +18,7 @@ return(
         {/* to control how user can rotate */}
         <OrbitControls
         enablePan={false}
-        enableZoom={!isMobile}
+        enableZoom={!isTablet}
         enableRotate={true}
         maxDistance={20}
         minDistance={10}
