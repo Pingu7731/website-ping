@@ -2,37 +2,47 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 // import { useIsMobile } from "../isMobile";
 import { useMediaQuery } from "react-responsive";
+// import { GameBoy } from "./GameBoy";
+import { Room } from "./Room";
 // import { div } from "three/tsl";
 
-export const HeroExperience= () => {
-    // const isMobile= useMediaQuery({ query: '(max-width: 768px)' });
-    const isTablet= useMediaQuery({ query: '(max-width: 1024px)' });
 
-return(
-    // <div className="text-white">
-    //     test {isMobile ? "mobile" : "desktop"}
-    // </div>
-    <Canvas camera={{position:[0,0,15],fov:45}}>
-        <ambientLight intensity={0.5} color="#1a1a40" />
-        <directionalLight position={[20,15,10]} intensity={5} />
-        {/* to control how user can rotate */}
-        <OrbitControls
-        enablePan={false}
-        enableZoom={!isTablet}
-        enableRotate={true}
-        maxDistance={20}
-        minDistance={10}
-        minPolarAngle={Math.PI/5}
-        maxPolarAngle={Math.PI/2}
-        />
+export const HeroExperience = () => {
+    const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+    // const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
 
-        {/* the box */}
-        <mesh>
-            <boxGeometry args={[5,5,5]} />
-            <meshStandardMaterial color="purple" />
-        </mesh>
-    </Canvas>
-)
+    return (
+        // <div className="text-white">
+        //     test {isMobile ? "mobile" : "desktop"}
+        // </div>
+        <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
+            <ambientLight intensity={0.5} color="#1a1a40" />
+            <directionalLight position={[20, 15, 10]} intensity={5} />
+            {/* to control how user can rotate */}
+            <OrbitControls
+                enablePan={false}
+                enableZoom={!isMobile}
+                enableRotate={true}
+                maxDistance={20}
+                minDistance={10}
+                minPolarAngle={Math.PI / 5}
+                maxPolarAngle={Math.PI / 2}
+            />
+            {/* the box */}
+            {/* <GameBoy scale={0.1} /> */}
+
+            <group
+                scale={isMobile ? 0.07 : 0.08}
+                position={[0, -3.5, 0]}
+                rotation={[0, -6, 0]}
+
+            >
+                <Room />
+            </group>
+
+
+        </Canvas>
+    )
 
 }
 export default HeroExperience;
