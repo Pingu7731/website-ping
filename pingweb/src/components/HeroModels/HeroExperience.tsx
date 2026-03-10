@@ -4,6 +4,8 @@ import { OrbitControls } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 // import { GameBoy } from "./GameBoy";
 import { Room } from "./Room";
+import HeroLights from "./HeroLighs.tsx"
+import Particles from "./Particles.tsx"
 // import { div } from "three/tsl";
 
 
@@ -16,8 +18,7 @@ export const HeroExperience = () => {
         //     test {isMobile ? "mobile" : "desktop"}
         // </div>
         <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
-            <ambientLight intensity={0.5} color="#1a1a40" />
-            <directionalLight position={[20, 15, 10]} intensity={5} />
+
             {/* to control how user can rotate */}
             <OrbitControls
                 enablePan={false}
@@ -28,15 +29,17 @@ export const HeroExperience = () => {
                 minPolarAngle={Math.PI / 5}
                 maxPolarAngle={Math.PI / 2}
             />
+            <HeroLights />
             {/* the box */}
-            {/* <GameBoy scale={0.1} /> */}
-
+            <Particles />
             <group
                 scale={isMobile ? 0.07 : 0.08}
                 position={[0, -3.5, 0]}
                 rotation={[0, -6, 0]}
 
             >
+
+                {/* <GameBoy scale={1.5} /> */}
                 <Room />
             </group>
 
