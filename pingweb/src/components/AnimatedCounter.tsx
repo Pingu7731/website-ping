@@ -2,6 +2,7 @@ import CountUp from 'react-countup'
 import { counterItems } from '../constants/index.ts'
 
 const AnimatedCounter = () => {
+    //TODO before clicking the button/ user notice the box , dont animate first, only animate after user see the box
     return (
         <div id="counter" className="padding-x-lg xl:mt-0 mt-32">
             <div className="mx-auto grid-4-cols">
