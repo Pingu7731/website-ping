@@ -10,7 +10,8 @@ const HeroLights = () => {
             <spotLight position={[1, 5, 5]}
                 intensity={60}
                 angle={0.4}
-                penumbra={1}
+
+                penumbra={1}// blur
                 color="9d4edd"
             />
             {/* <primitive

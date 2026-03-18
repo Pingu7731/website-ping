@@ -1,10 +1,10 @@
 import { useRef, useMemo } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useLoader } from "@react-three/fiber";
 import * as THREE from "three"
 
 const Particles = ({ count = 200 }) => {
     const mesh = useRef<THREE.Mesh>(null!);
-
+    const texture = useLoader(THREE.TextureLoader, '/textures/circle.png')
     const particles = useMemo(() => {
         const temp = [];
         for (let i = 0; i < count; i++) {
@@ -47,8 +47,9 @@ const Particles = ({ count = 200 }) => {
                 />
             </bufferGeometry>
             <pointsMaterial
+                map={texture}
                 color="#ffffff"
-                size={0.15}
+                size={0.3}
                 transparent
                 opacity={0.9}
                 depthWrite={false}
