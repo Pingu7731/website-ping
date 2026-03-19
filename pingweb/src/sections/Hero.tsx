@@ -4,6 +4,7 @@ import { HeroExperience } from "../components/HeroModels/HeroExperience"
 import { names } from "../constants"
 import { useGSAP } from "@gsap/react"
 import gsap from 'gsap'
+import ModelShowcase from "./ModelShowcase"
 
 const Hero = () => {
     useGSAP(() => {
@@ -55,7 +56,7 @@ const Hero = () => {
                         <Button
                             className="md:w-80 md:h-16 w-60 h-12"
                             id="button-hero"
-                            text="AAAAA"
+                            text="Continue"
                         />
                     </div>
                 </header>
@@ -68,6 +69,9 @@ const Hero = () => {
                 </figure>
             </div>
             <AnimatedCounter />
+            <ModelShowcase />
+
+
         </section>
     )
 }
