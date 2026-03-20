@@ -12,7 +12,7 @@ import Particles from "./Particles.tsx"
 export const HeroExperience = () => {
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
     // const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
-
+    //TODO disable scroll even at pc, when on phone,show the model bigger
     return (
         // <div className="text-white">
         //     test {isMobile ? "mobile" : "desktop"}

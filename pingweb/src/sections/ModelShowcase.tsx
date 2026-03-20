@@ -1,64 +1,41 @@
-import catPic from "../images/cat.png"
-import foshuniapic from "../images/foshunia.png"
-import yopte from "../images/yopte.png"
-import bunny from "../images/bunny.png"
+import { modelName } from "../constants";
+// import gsap from 'gsap'
 const ModelShowcase = () => {
     return (
 
         <div id="model" className="app-showcase">
             {/* <div>Me</div> */}
-            <div className="w-full">
-                <div className="showcaselayout">
-
-
-                    {/* catPic */}
-                    <div className="first-project-wrapper">
-                        <div className="image-wrapper">
-                            <img src={catPic} alt="aa" className="object-[42%_20%]" />
+            <div className="w-full ">
+                <div className="showcaselayout ">
+                    {/*xl:[&:has(.image-wrapper:hover)]:flex-2  --> make sure im hovering image*/}
+                    {modelName.map((item, i) =>
+                        <div key={i} className="
+                        first-project-wrapper
+                        flex-1
+                        transition-all duration-500
+                        xl:[&:has(.image-wrapper:hover)]:flex-2 
+                        ">
+                            <div className="
+                            image-wrapper opacity-100 transition-all duration-300  
+                            xl:opacity-50 
+                            xl:hover:w-full 
+                            xl:group-hover:opacity-50
+                            xl:hover:opacity-100">
+                                <img src={item.img}
+                                    alt=""
+                                    className={item.pos}
+                                />
+                            </div>
+                            <div className="text-content">
+                                <h2>
+                                    {item.name}
+                                </h2>
+                                <p className="text-white-50">
+                                    {item.desc}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="text-content">
-                        <h2>asdasd</h2>
-                        <p className="text-white-50 md:text-xl"> paragrath</p>
-                    </div>
-
-
-                    {/* foshunia */}
-                    <div className="first-project-wrapper">
-                        <div className="image-wrapper">
-                            <img src={foshuniapic} alt="aa" className="object-[40%_20%]" />
-                        </div>
-                    </div>
-                    <div className="text-content">
-                        <h2>asdasd</h2>
-                        <p className="text-white-50 md:text-xl"> paragrath</p>
-                    </div>
-
-
-                    {/* yopte */}
-
-                    <div className="first-project-wrapper">
-                        <div className="image-wrapper">
-                            <img src={yopte} alt="aa" />
-                        </div>
-                    </div>
-                    <div className="text-content">
-                        <h2>asdasd</h2>
-                        <p className="text-white-50 md:text-xl"> paragrath</p>
-                    </div>
-
-
-                    {/* bunny */}
-                    <div className="first-project-wrapper">
-                        <div className="image-wrapper">
-                            <img src={bunny} alt="aa" className="object-[34%_0%]" />
-                        </div>
-                    </div>
-                    <div className="text-content">
-                        <h2>asdasd</h2>
-                        <p className="text-white-50 md:text-xl"> paragrath</p>
-                    </div>
-
+                    )}
 
                 </div>
             </div>
