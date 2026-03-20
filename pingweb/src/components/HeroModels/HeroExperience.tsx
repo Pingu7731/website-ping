@@ -12,7 +12,7 @@ import Particles from "./Particles.tsx"
 export const HeroExperience = () => {
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
     // const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
-    //TODO disable scroll even at pc, when on phone,show the model bigger
+
     return (
         // <div className="text-white">
         //     test {isMobile ? "mobile" : "desktop"}
@@ -22,7 +22,7 @@ export const HeroExperience = () => {
             {/* to control how user can rotate */}
             <OrbitControls
                 enablePan={false}
-                enableZoom={!isMobile}
+                enableZoom={false}
                 enableRotate={true}
                 maxDistance={20}
                 minDistance={10}
