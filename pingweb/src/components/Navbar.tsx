@@ -5,7 +5,7 @@ const NavBar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 10;
+            // const isScrolled = window.scrollY > 10;
             setScrolled(true);
         }
 
