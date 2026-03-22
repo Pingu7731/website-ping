@@ -26,3 +26,10 @@ export const modelName = [
     { img: bunny, pos: "object-[37%_0%]", name: "Yue", desc: "I rarely use this, but remember say hi :D" }
 
 ]
+
+export const navLinks = [
+    { names: "Models", link: "#Models" },
+    { names: "Random", link: "#Random" },
+    { names: "Test", link: "#Test" },
+    { names: "", link: "#" },
+]
