@@ -8,7 +8,7 @@ import twitter from "../images/iconsL/twitter.jpg"
 import discord from "../images/iconsL/discord.png"
 import tiktok from "../images/iconsL/tiktok.jpg"
 import bluesky from "../images/iconsL/bluesky.png"
-import tetrioBlackWhite from "../images/iconsL/tetrioBlackWhite.png"
+import tetrioBlackwhite from "../images/iconsL/tetrioBlackwhite.png"
 export const names = [
     { name: "Ping", },
     // {name: "Ping",imgPath: ""},
@@ -47,5 +47,5 @@ export const iconsList = [
     { imgPath: discord },
     { imgPath: tiktok },
     { imgPath: bluesky },
-    { imgPath: tetrioBlackWhite },
+    { imgPath: tetrioBlackwhite },
 ]
