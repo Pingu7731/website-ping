@@ -2,7 +2,13 @@ import catPic from "../images/cat.png"
 import foshuniapic from "../images/foshunia.png"
 import yopte from "../images/yopte.png"
 import bunny from "../images/bunny.png"
-
+import twitch from "/public/iconsL/twitch.webp"
+import osu from "/public/iconsL/osu.png"
+import twitter from "/public/iconsL/twitter.jpg"
+import discord from "/public/iconsL/discord.png"
+import tiktok from "/public/iconsL/tiktok.jpg"
+import bluesky from "/public/iconsL/bluesky.png"
+import tetrioBlackWhite from "/public/iconsL/tetrioBlackWhite.png"
 export const names = [
     { name: "Ping", },
     // {name: "Ping",imgPath: ""},
@@ -35,11 +41,11 @@ export const navLinks = [
 ]
 
 export const iconsList = [
-    { imgPath: "../public/iconsL/twitch.webp" },
-    { imgPath: "../public/iconsL/osu.png" },
-    { imgPath: "../public/iconsL/twitter.jpg" },
-    { imgPath: "../public/iconsL/discord.png" },
-    { imgPath: "../public/iconsL/tiktok.jpg" },
-    { imgPath: "../public/iconsL/bluesky.png" },
-    { imgPath: "../public/iconsL/tetrioBlackWhite.png" },
+    { imgPath: twitch },
+    { imgPath: osu },
+    { imgPath: twitter },
+    { imgPath: discord },
+    { imgPath: tiktok },
+    { imgPath: bluesky },
+    { imgPath: tetrioBlackWhite },
 ]
