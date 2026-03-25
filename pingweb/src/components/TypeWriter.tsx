@@ -3,11 +3,11 @@ import Typewriter from "typewriter-effect"
 const TypeWriter = () => {
     //TODO window detect , only start when visible
     return (
-        <div className="flex justify-center items-center text-5xl pt-10 font-bold">
+        <div id="Models" className="flex justify-center items-center text-5xl pt-24 font-bold">
             <h1>
                 <Typewriter
                     options={{
-                        strings: ['These are all me !!'],
+                        strings: ['These are all me !!', 'Looks familiar?'],
                         autoStart: true,
                         delay: 67,
                         loop: true,

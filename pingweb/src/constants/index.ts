@@ -26,10 +26,10 @@ export const counterItems = [
 ]
 export const modelName = [
 
-    { img: catPic, pos: "object-[42%_20%]", name: "Chalo", desc: "The most recent one in VRChat!" },
-    { img: foshuniapic, pos: "object-[40%_20%]", name: "Foshunia", desc: "The one you will see at my stream" },
-    { img: yopte, pos: "", name: "Yopte", desc: "Sometimes I use this too ! :3" },
-    { img: bunny, pos: "object-[37%_0%]", name: "Yue", desc: "I rarely use this, but remember say hi :D" }
+    { img: catPic, pos: "object-[42%_20%]", name: "Chalo", desc: "The most recent one in VRChat!", links: "https://booth.pm/zh-tw/items/5201759" },
+    { img: foshuniapic, pos: "object-[40%_20%]", name: "Foshunia", desc: "The one you will see at my stream", links: "https://booth.pm/zh-tw/items/4580093" },
+    { img: yopte, pos: "", name: "Yopte", desc: "Sometimes I use this too ! :3", links: "https://booth.pm/zh-tw/items/5385453" },
+    { img: bunny, pos: "object-[37%_0%]", name: "Yue", desc: "I rarely use this, but remember say hi :D", links: "https://booth.pm/zh-tw/items/7112028" }
 
 ]
 

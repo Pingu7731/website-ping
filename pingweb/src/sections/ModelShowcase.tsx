@@ -40,7 +40,7 @@ const ModelShowcase = () => {
     }, []);
     return (
 
-        <div ref={sectionRef} id="Models" className="app-showcase">
+        <div ref={sectionRef} className="app-showcase">
 
             {/* <div>Me</div> */}
             <div className="w-full ">
@@ -64,10 +64,12 @@ const ModelShowcase = () => {
                             xl:hover:w-full 
                             xl:group-hover:opacity-50
                             xl:hover:opacity-100">
-                                <img src={item.img}
-                                    alt=""
-                                    className={item.pos}
-                                />
+                                <a href={item.links} target="_blank">
+                                    <img src={item.img}
+                                        alt=""
+                                        className={item.pos}
+                                    />
+                                </a>
                             </div>
                             <div className="text-content">
                                 <h2>
