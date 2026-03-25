@@ -33,3 +33,13 @@ export const navLinks = [
     { names: "Test", link: "#Test" },
     { names: "", link: "#" },
 ]
+
+export const iconsList = [
+    { imgPath: "../public/iconsL/twitch.webp" },
+    { imgPath: "../public/iconsL/osu.png" },
+    { imgPath: "../public/iconsL/twitter.jpg" },
+    { imgPath: "../public/iconsL/discord.png" },
+    { imgPath: "../public/iconsL/tiktok.jpg" },
+    { imgPath: "../public/iconsL/bluesky.png" },
+    { imgPath: "../public/iconsL/tetrioBlackWhite.png" },
+]
