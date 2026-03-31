@@ -71,7 +71,7 @@ export const milestoneCard = [
     { imgPath: mamehinata, desc: "This is where I learned that I can customize a VRChat AVI and export it to .VRM format for Vtubing. It got swapped due to some people saying it doesnt really fit my voice x3", title: "The Chibi Ping", date: "2023 January" },
     { imgPath: foshuniafirst, desc: "Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. ", title: "Discovered a Furry Model", date: "2024 January" },
     { imgPath: vrc, desc: "Starting to stream VRChat on my stream in VR with New PC! (I starved two month for that lololol, and my VR headset was broken so I have to bought a new one )  ", title: "VRChat Streams Added To List  ", date: "2023 March" },
-    { imgPath: foshunia, desc: "Discoverd VNyan ,swapped from VSeeFace to VNyan for better interaction on stream. With more new reedeems, more fun ", title: "New Cloths for Ping", date: "123456789" },
+    { imgPath: foshunia, desc: "Discoverd VNyan ,swapped from VSeeFace to VNyan for better interaction on stream. With more new reedeems, more fun ", title: "New Cloths for Ping", date: "2025 I think" },
     { imgPath: fbt, desc: "Bought full body tracking, it was a pretty nice deal so I ordered it at the midnight (It was an accident trust trust) ", title: "Full Body Tracking Added", date: "2026 March" },
     { imgPath: TBContinued, desc: "The Journey Keep Going !", title: "To Be Continued", date: "Soon™" },
 ]
