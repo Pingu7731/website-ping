@@ -9,6 +9,18 @@ import discord from "../images/iconsL/discord.png"
 import tiktok from "../images/iconsL/tiktok.jpg"
 import bluesky from "../images/iconsL/bluesky.png"
 import tetrioBlackwhite from "../images/iconsL/tetrioBlackwhite.png"
+import firstMadethreeDModel from "../images/MileStoneSS/firstMadethreeDModel.png"
+import fbt from "../images/MileStoneSS/fbt.png"
+import foshunia from "../images/MileStoneSS/foshunia.png"
+import foshuniafirst from "../images/MileStoneSS/foshuniafirst.png"
+import live2d from "../images/MileStoneSS/live2d.png"
+import mamehinata from "../images/MileStoneSS/mamehinata.png"
+import wolfVtube from "../images/MileStoneSS/wolfVtube.png"
+import BongoCat from "../images/MileStoneSS/BongoCat.png"
+import vrc from "../images/MileStoneSS/vrc.png"
+import longHairHuman from "../images/MileStoneSS/longHairHuman.png"
+import TBContinued from "../images/MileStoneSS/TBC.png"
+
 export const names = [
     { name: "Ping", },
     // {name: "Ping",imgPath: ""},
@@ -35,7 +47,7 @@ export const modelName = [
 
 export const navLinks = [
     { names: "Models", link: "#Models" },
-    { names: "Random", link: "#Random" },
+    { names: "Milestones", link: "#milestones" },
     { names: "Test", link: "#Test" },
     { names: "", link: "#" },
 ]
@@ -48,4 +60,18 @@ export const iconsList = [
     { imgPath: tiktok },
     { imgPath: bluesky },
     { imgPath: tetrioBlackwhite },
+]
+
+export const milestoneCard = [
+    { imgPath: wolfVtube, desc: "First model that I used for Vtubing,it was free from FaceRig lmaoaoaoao ", title: "First stream! ", date: "2020/11/30", },
+    { imgPath: BongoCat, desc: "This was only used when im playing Osu or when my old laptop couldnt handle the game much", title: "The Bongo", date: "2020 December" },
+    { imgPath: live2d, desc: "The Live2D I made, it only lasted for two weeks and I abandoned him XD", title: "First Live2D Model", date: "Somewhere head of 2021 I forgot" },
+    { imgPath: firstMadethreeDModel, desc: "I discovered Vroid, starting to try making my own avatar, theres no premade hair that time at the old vroid,thats why the hair is very scuffed.", title: "The 3D Era Starts Here", date: "2021 January" },
+    { imgPath: longHairHuman, desc: "Vroid had a update tha you can just customize character by clicking those presets, so I reworked the model with a new hair! Its gonna be long hair because i like it >:3", title: "The Long Hair Ping", date: "2021 December" },
+    { imgPath: mamehinata, desc: "This is where I learned that I can customize a VRChat AVI and export it to .VRM format for Vtubing. It got swapped due to some people saying it doesnt really fit my voice x3", title: "The Chibi Ping", date: "2023 January" },
+    { imgPath: foshuniafirst, desc: "Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. ", title: "Discovered a Furry Model", date: "2024 January" },
+    { imgPath: vrc, desc: "Starting to stream VRChat on my stream in VR with New PC! (I starved two month for that lololol, and my VR headset was broken so I have to bought a new one )  ", title: "VRChat Streams Added To List  ", date: "2023 March" },
+    { imgPath: foshunia, desc: "Discoverd VNyan ,swapped from VSeeFace to VNyan for better interaction on stream. With more new reedeems, more fun ", title: "New Cloths for Ping", date: "123456789" },
+    { imgPath: fbt, desc: "Bought full body tracking, it was a pretty nice deal so I ordered it at the midnight (It was an accident trust trust) ", title: "Full Body Tracking Added", date: "2026 March" },
+    { imgPath: TBContinued, desc: "The Journey Keep Going !", title: "To Be Continued", date: "Soon™" },
 ]
