@@ -80,8 +80,8 @@ export const socialIcons = [
     //rotation [上下，左右，正面水平旋轉]
     { name: "Discord", iconPath: "/models/discordIcon.glb", scale: 1.5, rotation: [-0.2, 0.1, 0.1] as const },
     { name: "Facebook", iconPath: "/models/facebookIcon.glb", scale: 1.5, rotation: [-0.1, -0.2, 0] as const },
-    { name: "GitHub", iconPath: "/models/githubIcon.glb", scale: 1.5, rotation: [-0.2, -0.2, -0.1] as const },
-    { name: "Reddit", iconPath: "/models/redditIcon.glb", scale: 1.5, rotation: [-0.1, -0.15, 0] as const },
+    // { name: "GitHub", iconPath: "/models/githubIcon.glb", scale: 1.5, rotation: [-0.2, -0.2, -0.1] as const },
+    // { name: "Reddit", iconPath: "/models/redditIcon.glb", scale: 1.5, rotation: [-0.1, -0.15, 0] as const },
     { name: "TikTok", iconPath: "/models/tiktokIcon.glb", scale: 1.5, rotation: [-0.2, 0.2, 0] as const },
     { name: "Twitch", iconPath: "/models/twitchIcon.glb", scale: 1.5, rotation: [-0.1, 0.25, 0] as const },
     { name: "YouTube", iconPath: "/models/youtubeBlackIcon.glb", scale: 1.5, rotation: [-0.2, -0.1, 0] as const },
