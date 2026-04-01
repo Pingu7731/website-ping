@@ -5,6 +5,7 @@ import TypeWriter from "./components/TypeWriter.tsx";
 import Hero from "./sections/Hero.tsx";
 import ModelShowcase from "./sections/ModelShowcase.tsx";
 import MilestoneSection from "./sections/MilestoneSection.tsx";
+import SocialsSection from "./sections/SocialsSection.tsx";
 const App = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const App = () => {
       <ModelShowcase />
       <LogoSection />
       <MilestoneSection />
-
+      <SocialsSection />
     </>
   )
 }

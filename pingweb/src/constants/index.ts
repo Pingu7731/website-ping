@@ -31,10 +31,10 @@ export const names = [
 ]
 
 export const counterItems = [
-    { value: 10, suffix: "+", label: "Testing" },
-    { value: 130, suffix: "+", label: "Testing" },
-    { value: 10333, suffix: "+", label: "Testing" },
-    { value: 1022, suffix: "+", label: "Testing" }
+    { value: 10, suffix: "+", label: "Testing1" },
+    { value: 130, suffix: "+", label: "Testing2" },
+    { value: 10333, suffix: "+", label: "Testing3" },
+    { value: 1022, suffix: "+", label: "Testing4" }
 ]
 export const modelName = [
 
@@ -48,7 +48,7 @@ export const modelName = [
 export const navLinks = [
     { names: "Models", link: "#Models" },
     { names: "Milestones", link: "#milestones" },
-    { names: "Test", link: "#Test" },
+    { names: "Socials", link: "#Socials" },
     { names: "", link: "#" },
 ]
 
@@ -74,4 +74,16 @@ export const milestoneCard = [
     { imgPath: foshunia, desc: "Discoverd VNyan ,swapped from VSeeFace to VNyan for better interaction on stream. With more new reedeems, more fun ", title: "New Cloths for Ping", date: "Mid 2025 I think" },
     { imgPath: fbt, desc: "Bought full body tracking, it was a pretty nice deal so I ordered it at the midnight (It was an accident trust trust) ", title: "Full Body Tracking Added", date: "2026 March" },
     { imgPath: TBContinued, desc: "The Journey Keep Going !", title: "To Be Continued", date: "Soon™" },
+]
+
+export const socialIcons = [
+    //rotation [上下，左右，正面水平旋轉]
+    { name: "Discord", iconPath: "/models/discordIcon.glb", scale: 1.5, rotation: [-0.2, 0.1, 0.1] as const },
+    { name: "Facebook", iconPath: "/models/facebookIcon.glb", scale: 1.5, rotation: [-0.1, -0.2, 0] as const },
+    { name: "GitHub", iconPath: "/models/githubIcon.glb", scale: 1.5, rotation: [-0.2, -0.2, -0.1] as const },
+    { name: "Reddit", iconPath: "/models/redditIcon.glb", scale: 1.5, rotation: [-0.1, -0.15, 0] as const },
+    { name: "TikTok", iconPath: "/models/tiktokIcon.glb", scale: 1.5, rotation: [-0.2, 0.2, 0] as const },
+    { name: "Twitch", iconPath: "/models/twitchIcon.glb", scale: 1.5, rotation: [-0.1, 0.25, 0] as const },
+    { name: "YouTube", iconPath: "/models/youtubeBlackIcon.glb", scale: 1.5, rotation: [-0.2, -0.1, 0] as const },
+
 ]
