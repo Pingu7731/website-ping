@@ -48,7 +48,7 @@ const MilestoneSection = () => {
         <section ref={sectionRef} className="w-full py-20 relative overflow-hidden">
             <TitleHeader titleString="MileStones" sub="When did you found me ?" />
 
-            <div className="mt-32 max-w-7xl mx-auto relative px-5">
+            <div className="mt-32 w-full mx-auto relative px-5">
 
                 {/* THE line */}
                 <div className="absolute left-[50%] translate-x-[-50%] top-0 bottom-0 w-0.5 hidden md:block">
