@@ -6,6 +6,7 @@ import Hero from "./sections/Hero.tsx";
 import ModelShowcase from "./sections/ModelShowcase.tsx";
 import MilestoneSection from "./sections/MilestoneSection.tsx";
 import SocialsSection from "./sections/SocialsSection.tsx";
+import Footer from "./sections/Footer.tsx";
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
       <LogoSection />
       <MilestoneSection />
       <SocialsSection />
+      <Footer />
     </>
   )
 }

@@ -37,7 +37,7 @@ const NavBar = () => {
                     </ul>
                 </nav>
 
-                <a href="#test" className=" contact-btn group">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" className=" contact-btn group">
                     <div className="inner">
                         <span>Idk bro</span>
                     </div>

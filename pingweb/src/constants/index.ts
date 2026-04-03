@@ -9,6 +9,8 @@ import discord from "../images/iconsL/discord.png"
 import tiktok from "../images/iconsL/tiktok.jpg"
 import bluesky from "../images/iconsL/bluesky.png"
 import tetrioBlackwhite from "../images/iconsL/tetrioBlackwhite.png"
+import gmailIcon from "../images/iconsL/gmailIcon.png"
+import X from "../images/iconsL/X.png"
 import firstMadethreeDModel from "../images/MileStoneSS/firstMadethreeDModel.webp"
 import fbt from "../images/MileStoneSS/fbt.webp"
 import foshunia from "../images/MileStoneSS/foshunia.webp"
@@ -78,12 +80,21 @@ export const milestoneCard = [
 
 export const socialIcons = [
     //rotation [上下，左右，正面水平旋轉]
-    { name: "Discord", iconPath: "/models/discordIcon.glb", scale: 1.5, rotation: [-0.2, 0.1, 0.1] as const },
-    { name: "Facebook", iconPath: "/models/facebookIcon.glb", scale: 1.5, rotation: [-0.1, -0.2, 0] as const },
+
+    { name: "Twitch", iconPath: "/models/twitchIcon.glb", scale: 1.5, rotation: [-0.1, 0.25, 0] as const, url: "https://www.twitch.tv/ping7731", target: "_blank" },
+    { name: "TikTok", iconPath: "/models/tiktokIcon.glb", scale: 1.5, rotation: [-0.2, 0.2, 0] as const, url: "https://www.tiktok.com/@ping7731?lang=en", target: "_blank" },
+    { name: "YouTube", iconPath: "/models/youtubeBlackIcon.glb", scale: 1.5, rotation: [-0.2, -0.1, 0] as const, url: "https://www.youtube.com/@Ping-rm1iz", target: "_blank" },
+    { name: "Facebook", iconPath: "/models/facebookIcon.glb", scale: 1.5, rotation: [-0.1, -0.2, 0] as const, url: "https://www.facebook.com/profile.php?id=61573680058498", target: "_blank" },
+    { name: "Discord", iconPath: "/models/discordIcon.glb", scale: 1.5, rotation: [-0.2, 0.1, 0.1] as const, url: "https://discord.gg/n8gxBuXWtt", target: "_blank" },
     // { name: "GitHub", iconPath: "/models/githubIcon.glb", scale: 1.5, rotation: [-0.2, -0.2, -0.1] as const },
     // { name: "Reddit", iconPath: "/models/redditIcon.glb", scale: 1.5, rotation: [-0.1, -0.15, 0] as const },
-    { name: "TikTok", iconPath: "/models/tiktokIcon.glb", scale: 1.5, rotation: [-0.2, 0.2, 0] as const },
-    { name: "Twitch", iconPath: "/models/twitchIcon.glb", scale: 1.5, rotation: [-0.1, 0.25, 0] as const },
-    { name: "YouTube", iconPath: "/models/youtubeBlackIcon.glb", scale: 1.5, rotation: [-0.2, -0.1, 0] as const },
 
+]
+
+export const socialImage = [
+    { name: "gmail", url: "mailto:pingping7731@gmail.com?subject=Contacting%20from%20your%20website", imgPath: gmailIcon, target: "" },
+    { name: "X.com", url: "https://x.com/Ping_7731", imgPath: X, target: "_blank" },
+    { name: "bsky", url: "https://bsky.app/profile/ping7731.bsky.social", imgPath: bluesky, target: "_blank" },
+    { name: "tetrio", url: "https://ch.tetr.io/u/ping7731", imgPath: tetrioBlackwhite, target: "_blank" },
+    { name: "osu", url: "https://osu.ppy.sh/users/7289284", imgPath: osu, target: "_blank" },
 ]

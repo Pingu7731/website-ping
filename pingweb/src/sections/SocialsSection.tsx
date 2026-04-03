@@ -5,7 +5,7 @@ import { socialIcons } from "../constants"
 
 const SocialsSection = () => {
     return (
-        //TODO： FLex -col for arraging all social in one row
+
         <div id="Socials" className="flex-center section-padding">
             <div className="w-full h-full md:px-10 px-5">
                 <TitleHeader
@@ -14,24 +14,36 @@ const SocialsSection = () => {
                 />
 
                 <div className="tech-grid">
-                    {socialIcons.map((icon) => (
-                        <div key={icon.name} className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg">
-                            {/* this thing broken */}
-                            {/* TODO: Fix animated bg for the card */}
-                            {/* <div className="tech-card tech-card-animated-bg" /> */}
-                            {/* this thing broken */}
+                    {socialIcons.map((icon) => {
+                        let mouseMoved = false;
 
-                            <div className="tech-card-content">
-                                <div className="tech-icon-wrapper">
-                                    <SocialIcon models={icon as any} />
-                                </div>
-                                <div className="padding-x w-full">
-                                    <p>{icon.name}</p>
+                        return (
+                            <div
+                                key={icon.name}
+                                className="relative transition-all duration-500 hover:scale-105 hover:bg-gray-700 card-border tech-card overflow-hidden group xl:rounded-full rounded-lg cursor-pointer"
+                                // 監測滑鼠click
+                                onMouseDown={() => (mouseMoved = false)}
+                                // 滑鼠有移動標記為拖拽
+                                onMouseMove={() => (mouseMoved = true)}
+                                // 滑鼠放開沒移動才跳
+                                onMouseUp={() => {
+                                    if (!mouseMoved) {
+                                        window.open(icon.url, icon.target || "_blank", "noreferrer");
+                                    }
+                                }}
+                            >
+                                <div className="tech-card-content">
+                                    <div className="tech-icon-wrapper">
+
+                                        <SocialIcon models={icon as any} />
+                                    </div>
+                                    <div className="padding-x w-full">
+                                        <p className="group-hover:text-white transition-colors">{icon.name}</p>
+                                    </div>
                                 </div>
                             </div>
-
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </div>
