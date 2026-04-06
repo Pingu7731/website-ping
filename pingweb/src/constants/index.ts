@@ -33,10 +33,10 @@ export const names = [
 ]
 
 export const counterItems = [
-    { value: 10, suffix: "+", label: "Testing1" },
-    { value: 130, suffix: "+", label: "Testing2" },
-    { value: 10333, suffix: "+", label: "Testing3" },
-    { value: 1022, suffix: "+", label: "Testing4" }
+    { id: 'followers', value: 0, suffix: "", label: "Total Follower" },
+    { id: 'random', value: 30112020, suffix: " ?", label: "A random number :3" },
+    { id: 'raids', value: [], suffix: "", label: "Recent Raids" },
+    { id: 'subs', value: [], suffix: "", label: "Recent Subs" }
 ]
 export const modelName = [
 

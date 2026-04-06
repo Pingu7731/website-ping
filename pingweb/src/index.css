@@ -327,7 +327,30 @@ section {
     }
   }
 }
+/* 文字向上滑入的效果 */
+.animate-slide-up {
+  animation: slideInUp 1.5s cubic-bezier(0.71, 0.03, 0.34, 1) forwards;
+}
 
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%); /* 從下方開始 */
+    opacity: 0;
+  }
+   15%{
+     transform: translateY(0); /* 回到原位 */
+    opacity: 1;
+  }
+   80%{
+     transform: translateY(0); /* 回到原位 */
+    opacity: 1;
+  }
+  100%{
+     transform: translateY(0); /* 回到原位 */
+    opacity: 0;
+  }
+ 
+}
 /* Hero text slider starts */
 .slide {
   display: inline-block;
