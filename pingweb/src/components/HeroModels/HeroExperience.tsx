@@ -18,7 +18,7 @@ export const HeroExperience = () => {
         //     test {isMobile ? "mobile" : "desktop"}
         // </div>
         <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
-
+            //TODO : make a T-Piece model
             {/* to control how user can rotate */}
             <OrbitControls
                 enablePan={false}

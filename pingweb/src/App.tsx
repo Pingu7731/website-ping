@@ -8,7 +8,7 @@ import MilestoneSection from "./sections/MilestoneSection.tsx";
 import SocialsSection from "./sections/SocialsSection.tsx";
 import Footer from "./sections/Footer.tsx";
 const App = () => {
-
+  //TODO: make custom cursor
   return (
     <>
       <NavBar />

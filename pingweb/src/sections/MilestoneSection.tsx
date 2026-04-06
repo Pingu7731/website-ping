@@ -76,6 +76,7 @@ const MilestoneSection = () => {
                             {/* Card Side */}
                             <div className="timeline-card w-full md:w-1/2 flex justify-center md:justify-end z-20">
                                 <GlowCard card={card} index={i}>
+                                    //TODO : Make the video play for few sec and let the viewer click to get to the video
                                     <img src={card.imgPath} alt={card.title} className="rounded-lg" />
                                 </GlowCard>
                             </div>
