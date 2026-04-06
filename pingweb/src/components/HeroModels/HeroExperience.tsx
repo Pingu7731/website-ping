@@ -8,7 +8,7 @@ import HeroLights from "./HeroLighs.tsx"
 import Particles from "./Particles.tsx"
 // import { div } from "three/tsl";
 
-
+//TODO : make a T-Piece model
 export const HeroExperience = () => {
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
     // const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
@@ -18,7 +18,7 @@ export const HeroExperience = () => {
         //     test {isMobile ? "mobile" : "desktop"}
         // </div>
         <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
-            //TODO : make a T-Piece model
+
             {/* to control how user can rotate */}
             <OrbitControls
                 enablePan={false}
