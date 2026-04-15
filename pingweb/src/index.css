@@ -482,3 +482,38 @@ section {
 .card:hover::before {
   opacity: 1;
 }
+.carousel {
+  width: 100%; 
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.innerPart {
+  display: flex;
+  width: max-content; 
+  animation: cardScroll 320s linear infinite; 
+}
+.innerPart2 {
+  display: flex;
+  width: max-content; 
+  animation: cardScroll2 320s linear infinite; 
+}
+
+.vrcCard {
+  width: 25em;
+  height: 15em;
+  padding: 1em;
+  flex-shrink: 0; /* make sure it doesnt get compressed */
+  
+}
+
+@keyframes cardScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); } 
+}
+@keyframes cardScroll2 {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); } 
+}
