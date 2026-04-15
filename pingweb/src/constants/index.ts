@@ -202,7 +202,6 @@ export const gridPhotos3 = [
     { name: "meKurofurry", path: meKurofurry },
     { name: "mekurosage", path: mekurosage },
     { name: "meLain", path: meLain },
-    { name: "meLain2", path: meLain2 },
     { name: "nickfoshunia3", path: nickfoshunia3 },
     { name: "meLain2", path: meLain2 },
     { name: "threeperson", path: threeperson },
