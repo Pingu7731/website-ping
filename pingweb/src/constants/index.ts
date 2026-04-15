@@ -46,7 +46,7 @@ import meDex from "../images/vrcPhotos/meDex.webp"
 import meDex2 from "../images/vrcPhotos/meDex2.webp"
 import meDex3 from "../images/vrcPhotos/meDex3.webp"
 import meDex4 from "../images/vrcPhotos/meDex4.webp"
-import meDex5 from "../images/vrcPhotos/meDex5.webp"
+// import meDex5 from "../images/vrcPhotos/meDex5.webp"
 import meDex6 from "../images/vrcPhotos/meDex6.webp"
 import meDexFurry from "../images/vrcPhotos/meDexFurry.webp"
 import megoblinfishing from "../images/vrcPhotos/megoblinfishing.webp"
@@ -169,7 +169,7 @@ export const gridPhotos = [
     { name: "meLain3", path: meLain3 },
     { name: "meLain5", path: meLain5 },
     { name: "memarti", path: memarti },
-    { name: "meDex5", path: meDex5 },
+    // { name: "meDex5", path: meDex5 },
     { name: "meDex6", path: meDex6 },
 ]
 
