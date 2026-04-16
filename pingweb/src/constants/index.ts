@@ -169,7 +169,7 @@ export const gridPhotos = [
     { name: "meLain3", path: meLain3 },
     { name: "meLain5", path: meLain5 },
     { name: "memarti", path: memarti },
-    { name: "meDexLaying.webp", path: meDexLaying },
+    { name: "meDexLaying", path: meDexLaying },
     { name: "meDex6", path: meDex6 },
 ]
 
