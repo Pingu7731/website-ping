@@ -82,11 +82,11 @@ const MilestoneSection = () => {
                                     className="block cursor-pointer hover:opacity-90 transition-opacity"
                                 >
                                     <GlowCard card={card} index={i}>
-                                        {/*TODO : Make the video play for few sec and let the viewer click to get to the video */}
                                         <img
                                             src={card.imgPath}
                                             alt={card.title}
                                             className="rounded-lg"
+                                            loading="lazy"
                                         />
 
                                     </GlowCard>
