@@ -22,11 +22,11 @@ import BongoCat from "../images/MileStoneSS/BongoCat.webp"
 import vrc from "../images/MileStoneSS/vrc.webp"
 import longHairHuman from "../images/MileStoneSS/longHairHuman.webp"
 import TBContinued from "../images/MileStoneSS/TBC.png"
-// import akime from "../images/vrcPhotos/akime.webp"
-// import alotalotpeopleagain2 from "../images/vrcPhotos/alotalotpeopleagain2.webp"
-// import alotpeople from "../images/vrcPhotos/alotpeople.webp"
+import akime from "../images/vrcPhotos/akime.webp"
+import alotalotpeopleagain2 from "../images/vrcPhotos/alotalotpeopleagain2.webp"
+import alotpeople from "../images/vrcPhotos/alotpeople.webp"
 // import alotpeopleagain from "../images/vrcPhotos/alotpeopleagain.webp"
-// import boat from "../images/vrcPhotos/boat.webp"
+import boat from "../images/vrcPhotos/boat.webp"
 // import boatAgain from "../images/vrcPhotos/boatAgain.webp"
 // import boner from "../images/vrcPhotos/boner.webp"
 // import bunnychilling from "../images/vrcPhotos/bunnychilling.webp"
@@ -152,26 +152,26 @@ export const socialImage = [
     { name: "osu", url: "https://osu.ppy.sh/users/7289284", imgPath: osu, target: "_blank" },
 ]
 
-// export const gridPhotos = [
-//     { name: "akime", path: akime },
-//     { name: "alotalotpeopleagain2", path: alotalotpeopleagain2 },
-//     { name: "alotpeople", path: alotpeople },
-//     { name: "boat", path: boat },
-//     { name: "alotpeopleagain", path: alotpeopleagain },
-//     { name: "boatAgain", path: boatAgain },
-//     { name: "boner", path: boner },
-//     { name: "bunnychilling", path: bunnychilling },
-//     { name: "chilling", path: chilling },
-//     { name: "forshuniaMoon", path: forshuniaMoon },
-//     { name: "foshuniaBis", path: foshuniaBis },
-//     { name: "meturtle", path: meturtle },
-//     { name: "nick4", path: nick4 },
-//     { name: "meLain3", path: meLain3 },
-//     { name: "meLain5", path: meLain5 },
-//     { name: "memarti", path: memarti },
-//     { name: "meDex5", path: meDex5 },
-//     { name: "meDex6", path: meDex6 },
-// ]
+export const gridPhotos = [
+    { name: "akime", path: akime },
+    { name: "alotalotpeopleagain2", path: alotalotpeopleagain2 },
+    { name: "alotpeople", path: alotpeople },
+    { name: "boat", path: boat },
+    // { name: "alotpeopleagain", path: alotpeopleagain },
+    // { name: "boatAgain", path: boatAgain },
+    // { name: "boner", path: boner },
+    // { name: "bunnychilling", path: bunnychilling },
+    // { name: "chilling", path: chilling },
+    // { name: "forshuniaMoon", path: forshuniaMoon },
+    // { name: "foshuniaBis", path: foshuniaBis },
+    // { name: "meturtle", path: meturtle },
+    // { name: "nick4", path: nick4 },
+    // { name: "meLain3", path: meLain3 },
+    // { name: "meLain5", path: meLain5 },
+    // { name: "memarti", path: memarti },
+    // { name: "meDex5", path: meDex5 },
+    // { name: "meDex6", path: meDex6 },
+]
 
 // export const gridPhotos2 = [
 //     { name: "goblin", path: goblin },
