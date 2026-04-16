@@ -7,7 +7,7 @@ import ModelShowcase from "./sections/ModelShowcase.tsx";
 import MilestoneSection from "./sections/MilestoneSection.tsx";
 import SocialsSection from "./sections/SocialsSection.tsx";
 import Footer from "./sections/Footer.tsx";
-// import PhotoGrid from "./sections/PhotoGrid.tsx";
+import PhotoGrid from "./sections/PhotoGrid.tsx";
 const App = () => {
   //TODO: make custom cursor
   return (
@@ -17,7 +17,7 @@ const App = () => {
       <TypeWriter />
       <ModelShowcase />
       {/* <LogoSection /> */}
-      {/* <PhotoGrid /> */}
+      <PhotoGrid />
       <MilestoneSection />
       <SocialsSection />
       <Footer />
