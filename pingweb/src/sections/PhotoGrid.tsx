@@ -10,11 +10,11 @@ const PhotoGrid = () => {
                         <img src={photo.path} alt={photo.name} className="w-full h-full object-cover rounded-xl " />
                     </div>
                 ))}
-                {/* {gridPhotos.map((photo) => (
+                {gridPhotos.map((photo) => (
                     <div key={`${photo.name}-dup`} className="vrcCard hover:scale-110 ease-in-out duration-500 transition-all">
                         <img src={photo.path} alt={photo.name} className="w-full h-full object-cover rounded-xl" />
                     </div>
-                ))} */}
+                ))}
             </div>
             {/* <div className="innerPart2">
                 {gridPhotos2.map((photo) => (
