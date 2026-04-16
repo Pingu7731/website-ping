@@ -1,6 +1,6 @@
 
 // // import { gridPhotos, gridPhotos2, gridPhotos3 } from "../constants";
-import { gridPhotos } from "../constants";
+import { gridPhotos, gridPhotos2 } from "../constants";
 const PhotoGrid = () => {
     return (
         <div className="carousel pt-16" id="Photos">
@@ -16,7 +16,7 @@ const PhotoGrid = () => {
                     </div>
                 ))}
             </div>
-            {/* <div className="innerPart2">
+            <div className="innerPart2">
                 {gridPhotos2.map((photo) => (
                     <div key={photo.name} className="vrcCard hover:scale-110 ease-in-out duration-500 transition-all">
                         <img src={photo.path} alt={photo.name} className="w-full h-full object-cover rounded-xl" />
@@ -28,7 +28,7 @@ const PhotoGrid = () => {
                     </div>
                 ))}
             </div>
-            <div className="innerPart">
+            {/* <div className="innerPart">
                 {gridPhotos3.map((photo) => (
                     <div key={photo.name} className="vrcCard hover:scale-110 ease-in-out duration-500 transition-all">
                         <img src={photo.path} alt={photo.name} className="w-full h-full object-cover rounded-xl " />
