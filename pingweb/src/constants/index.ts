@@ -101,7 +101,7 @@ export const counterItems = [
 export const modelName = [
 
     { img: catPic, pos: "object-[42%_20%]", name: "Chalo", desc: "The most recent one in VRChat!", links: "https://booth.pm/zh-tw/items/5201759" },
-    { img: foshuniapic, pos: "object-[40%_20%]", name: "Foshunia", desc: "The one you will see at my stream", links: "https://booth.pm/zh-tw/items/4580093" },
+    { img: foshuniapic, pos: "object-[40%_20%]", name: "Foshunia", desc: "The one you will see on my stream", links: "https://booth.pm/zh-tw/items/4580093" },
     { img: yopte, pos: "", name: "Yopte", desc: "Sometimes I use this too ! :3", links: "https://booth.pm/zh-tw/items/5385453" },
     { img: bunny, pos: "object-[37%_0%]", name: "Yue", desc: "I rarely use this, but remember say hi :D", links: "https://booth.pm/zh-tw/items/7112028" }
 
@@ -127,7 +127,7 @@ export const iconsList = [
 export const milestoneCard = [
     { imgPath: wolfVtube, desc: "First model that I used for Vtubing,it was free from FaceRig lmaoaoaoao ", title: "First stream! ", date: "2020/11/30", link: "https://www.youtube.com/watch?v=Mi3CTiExTsI" },
     { imgPath: BongoCat, desc: "This was only used when im playing Osu or when my old laptop couldnt handle the game much", title: "The Bongo", date: "2020 December", link: "https://www.youtube.com/watch?v=ihQv5GUDdkw" },
-    { imgPath: live2d, desc: "The Live2D I made, it only lasted for two weeks and I abandoned him XD", title: "First Live2D Model", date: "Somewhere head of 2021 I forgot", link: "https://www.youtube.com/watch?v=-BtinMv3X30" },
+    { imgPath: live2d, desc: "The Live2D I made, it only lasted for two weeks and I abandoned him XD", title: "First Live2D Model", date: "Somewhere head of 2021 I forget", link: "https://www.youtube.com/watch?v=-BtinMv3X30" },
     { imgPath: firstMadethreeDModel, desc: "I discovered Vroid Studio, starting to try making my own avatar, theres no premade hair that time at the old vroid,thats why the hair is very scuffed.", title: "The 3D Era Starts Here", date: "2021 January", link: "https://www.youtube.com/watch?v=0KyIIhRs-ec" },
     { imgPath: longHairHuman, desc: "Vroid Studio had a update tha you can just customize character by clicking those presets, so I reworked the model with a new hair! Its gonna be long hair because i like it >:3", title: "The Long Hair Ping", date: "2021 December", link: "https://www.youtube.com/watch?v=2r-xnfZ7TNQ" },
     { imgPath: mamehinata, desc: "This is where I learned that I can customize a VRChat AVI and export it to .VRM format for Vtubing. It got swapped due to some people saying it doesnt really fit my voice x3", title: "The Chibi Ping", date: "2023 January", link: "https://www.twitch.tv/ping7731/clip/TenderEagerMangetoutPeoplesChamp-4yxWpppdnasGzxCQ?filter=clips&range=all&sort=time" },
