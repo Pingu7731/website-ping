@@ -75,6 +75,13 @@ import roggokurofoshunia from "../images/vrcPhotos/roggokurofoshunia.webp"
 import smexyhao from "../images/vrcPhotos/smexyhao.webp"
 import smol from "../images/vrcPhotos/smol.webp"
 import threeperson from "../images/vrcPhotos/threeperson.webp"
+import ip from "../images/DropImg/ip.webp"
+import jp from "../images/DropImg/jp.webp"
+import lp from "../images/DropImg/lp.webp"
+import op from "../images/DropImg/op.webp"
+import sp from "../images/DropImg/sp.webp"
+import tp from "../images/DropImg/tp.webp"
+import zp from "../images/DropImg/zp.webp"
 
 export const names = [
     { name: "Ping", },
@@ -212,4 +219,14 @@ export const gridPhotos3 = [
     { name: "roggo", path: roggo },
     { name: "roggokurofoshunia", path: roggokurofoshunia },
     { name: "mebisnail", path: mebisnail },
+]
+export const dropImg = [
+    { name: "ip", path: ip },
+    { name: "jp", path: jp },
+    { name: "lp", path: lp },
+    { name: "op", path: op },
+    { name: "sp", path: sp },
+    { name: "tp", path: tp },
+    { name: "zp", path: zp },
+
 ]
