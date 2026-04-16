@@ -40,20 +40,20 @@ import kurofoshunia from "../images/vrcPhotos/kurofoshunia.webp"
 import vrcMamehinata from "../images/vrcPhotos/vrcmamehinata.webp"
 import meAki2 from "../images/vrcPhotos/meAki2.webp"
 import mealex from "../images/vrcPhotos/mealex.webp"
-// import mebisnail from "../images/vrcPhotos/mebisnail.webp"
+import mebisnail from "../images/vrcPhotos/mebisnail.webp"
 import mechalo from "../images/vrcPhotos/mechalo.webp"
 import meDex from "../images/vrcPhotos/meDex.webp"
-// import meDex2 from "../images/vrcPhotos/meDex2.webp"
-// import meDex3 from "../images/vrcPhotos/meDex3.webp"
-// import meDex4 from "../images/vrcPhotos/meDex4.webp"
+import meDex2 from "../images/vrcPhotos/meDex2.webp"
+import meDex3 from "../images/vrcPhotos/meDex3.webp"
+import meDex4 from "../images/vrcPhotos/meDex4.webp"
 // import meDex5 from "../images/vrcPhotos/meDex5.webp"
 import meDex6 from "../images/vrcPhotos/meDex6.webp"
-// import meDexFurry from "../images/vrcPhotos/meDexFurry.webp"
-// import megoblinfishing from "../images/vrcPhotos/megoblinfishing.webp"
-// import meKurofurry from "../images/vrcPhotos/meKurofurry.webp"
-// import mekurosage from "../images/vrcPhotos/mekurosage.webp"
-// import meLain from "../images/vrcPhotos/meLain.webp"
-// import meLain2 from "../images/vrcPhotos/meLain2.webp"
+import meDexFurry from "../images/vrcPhotos/meDexFurry.webp"
+import megoblinfishing from "../images/vrcPhotos/megoblinfishing.webp"
+import meKurofurry from "../images/vrcPhotos/meKurofurry.webp"
+import mekurosage from "../images/vrcPhotos/mekurosage.webp"
+import meLain from "../images/vrcPhotos/meLain.webp"
+import meLain2 from "../images/vrcPhotos/meLain2.webp"
 import meLain3 from "../images/vrcPhotos/melain3.webp"
 import meLain5 from "../images/vrcPhotos/melain5.webp"
 import memarti from "../images/vrcPhotos/memarti.webp"
@@ -62,19 +62,19 @@ import MeRhegi from "../images/vrcPhotos/MeRhegi.webp"
 import meroggo from "../images/vrcPhotos/meroggo.webp"
 import meroggoagain from "../images/vrcPhotos/meroggoagain.webp"
 import mesage from "../images/vrcPhotos/mesage.webp"
-// import meslip from "../images/vrcPhotos/meslip.webp"
-// import mesnivy from "../images/vrcPhotos/mesnivy.webp"
+import meslip from "../images/vrcPhotos/meslip.webp"
+import mesnivy from "../images/vrcPhotos/mesnivy.webp"
 import meturtle from "../images/vrcPhotos/meturtle.webp"
 import nick4 from "../images/vrcPhotos/nick4.webp"
 import nickfoshunia from "../images/vrcPhotos/nickfoshunia.webp"
 import nickfoshunia2 from "../images/vrcPhotos/nickfoshunia2.webp"
-// import nickfoshunia3 from "../images/vrcPhotos/nickfoshunia3.webp"
-// import rhegi from "../images/vrcPhotos/rhegi.webp"
-// import roggo from "../images/vrcPhotos/roggo.webp"
-// import roggokurofoshunia from "../images/vrcPhotos/roggokurofoshunia.webp"
+import nickfoshunia3 from "../images/vrcPhotos/nickfoshunia3.webp"
+import rhegi from "../images/vrcPhotos/rhegi.webp"
+import roggo from "../images/vrcPhotos/roggo.webp"
+import roggokurofoshunia from "../images/vrcPhotos/roggokurofoshunia.webp"
 import smexyhao from "../images/vrcPhotos/smexyhao.webp"
 import smol from "../images/vrcPhotos/smol.webp"
-// import threeperson from "../images/vrcPhotos/threeperson.webp"
+import threeperson from "../images/vrcPhotos/threeperson.webp"
 
 export const names = [
     { name: "Ping", },
@@ -194,22 +194,22 @@ export const gridPhotos2 = [
     { name: "mesage", path: mesage },
 
 ]
-// export const gridPhotos3 = [
-//     { name: "meDex2", path: meDex2 },
-//     { name: "meDex3", path: meDex3 },
-//     { name: "meDex4", path: meDex4 },
-//     { name: "meDexFurry", path: meDexFurry },
-//     { name: "megoblinfishing", path: megoblinfishing },
-//     { name: "meKurofurry", path: meKurofurry },
-//     { name: "mekurosage", path: mekurosage },
-//     { name: "meLain", path: meLain },
-//     { name: "nickfoshunia3", path: nickfoshunia3 },
-//     { name: "meLain2", path: meLain2 },
-//     { name: "threeperson", path: threeperson },
-//     { name: "meslip", path: meslip },
-//     { name: "mesnivy", path: mesnivy },
-//     { name: "rhegi", path: rhegi },
-//     { name: "roggo", path: roggo },
-//     { name: "roggokurofoshunia", path: roggokurofoshunia },
-//     { name: "mebisnail", path: mebisnail },
-// ]
+export const gridPhotos3 = [
+    { name: "meDex2", path: meDex2 },
+    { name: "meDex3", path: meDex3 },
+    { name: "meDex4", path: meDex4 },
+    { name: "meDexFurry", path: meDexFurry },
+    { name: "megoblinfishing", path: megoblinfishing },
+    { name: "meKurofurry", path: meKurofurry },
+    { name: "mekurosage", path: mekurosage },
+    { name: "meLain", path: meLain },
+    { name: "nickfoshunia3", path: nickfoshunia3 },
+    { name: "meLain2", path: meLain2 },
+    { name: "threeperson", path: threeperson },
+    { name: "meslip", path: meslip },
+    { name: "mesnivy", path: mesnivy },
+    { name: "rhegi", path: rhegi },
+    { name: "roggo", path: roggo },
+    { name: "roggokurofoshunia", path: roggokurofoshunia },
+    { name: "mebisnail", path: mebisnail },
+]
