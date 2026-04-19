@@ -33,6 +33,7 @@ section {
   .flex-center {
     @apply flex justify-center items-center;
   }
+
   .flex-col-center {
     @apply flex flex-col justify-center items-center;
   }
@@ -85,10 +86,12 @@ section {
   }
 
   .hero-text {
-    @apply flex flex-col justify-center md:text-[60px] text-[30px] font-semibold relative z-10 pointer-events-none;
+    @apply flex flex-col justify-center md:text-[60px] text-[30px] font-semibold relative z-30 pointer-events-none;
+
     img {
       @apply size-8 md:size-10 object-contain;
     }
+
     .slide {
       @apply absolute pt-0 px-2 md:px-5 py-[30px] h-[48px] md:h-[78px] md:translate-y-1 translate-y-0 overflow-hidden;
     }
@@ -99,7 +102,7 @@ section {
   }
 
   .hero-3d-layout {
-    @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
+    @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:top-10 top-24 xl:-right-20 right-0;
   }
 
   .navbar {
@@ -159,10 +162,10 @@ section {
 
     .showcaselayout {
       @apply flex xl:flex-row flex-col gap-5 justify-between;
-       /* @apply flex xl:flex-row flex-col gap-5; */
+      /* @apply flex xl:flex-row flex-col gap-5; */
     }
- 
-    
+
+
     .first-project-wrapper {
       @apply h-full flex flex-col justify-between xl:w-[60%];
 
@@ -174,8 +177,8 @@ section {
           @apply w-full h-full object-cover rounded-xl absolute inset-0;
           /* @apply w-full h-full object-cover absolute inset-0 transition-transform duration-500; */
         }
-       
-       
+
+
       }
 
       .text-content {
@@ -216,19 +219,15 @@ section {
     @apply px-4 py-4 rounded-lg bg-black-200 flex justify-center items-center relative cursor-pointer overflow-hidden;
 
     .bg-circle {
-      @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
-        w-[120%] h-[120%] group-hover:size-10 group-hover:right-10
-        rounded-full bg-white-50 transition-all duration-500;
+      @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 w-[120%] h-[120%] group-hover:size-10 group-hover:right-10 rounded-full bg-white-50 transition-all duration-500;
     }
 
     .text {
-      @apply uppercase md:text-lg text-black transition-all duration-500
-        group-hover:text-white-50 group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
+      @apply uppercase md:text-lg text-black transition-all duration-500 group-hover:text-white-50 group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
     }
 
     .arrow-wrapper {
-      @apply group-hover:bg-white-50 size-10 rounded-full absolute right-10 top-1/2 
-        -translate-y-1/2 flex justify-center items-center overflow-hidden;
+      @apply group-hover:bg-white-50 size-10 rounded-full absolute right-10 top-1/2 -translate-y-1/2 flex justify-center items-center overflow-hidden;
 
       img {
         @apply size-7 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
@@ -327,6 +326,7 @@ section {
     }
   }
 }
+
 /* 文字向上滑入的效果 */
 .animate-slide-up {
   animation: slideInUp 1.5s cubic-bezier(0.71, 0.03, 0.34, 1) forwards;
@@ -334,23 +334,31 @@ section {
 
 @keyframes slideInUp {
   0% {
-    transform: translateY(100%); /* 從下方開始 */
+    transform: translateY(100%);
+    /* 從下方開始 */
     opacity: 0;
   }
-   15%{
-     transform: translateY(0); /* 回到原位 */
+
+  15% {
+    transform: translateY(0);
+    /* 回到原位 */
     opacity: 1;
   }
-   80%{
-     transform: translateY(0); /* 回到原位 */
+
+  80% {
+    transform: translateY(0);
+    /* 回到原位 */
     opacity: 1;
   }
-  100%{
-     transform: translateY(0); /* 回到原位 */
+
+  100% {
+    transform: translateY(0);
+    /* 回到原位 */
     opacity: 0;
   }
- 
+
 }
+
 /* Hero text slider starts */
 .slide {
   display: inline-block;
@@ -365,44 +373,56 @@ section {
 }
 
 @keyframes wordSlider {
-  0%   { transform: translateY(-0%); }
-  20%  { transform: translateY(-21%); }
-  40%  { transform: translateY(-41%); }
-  60%  { transform: translateY(-61%); }
-  80%  { transform: translateY(-81%); }
-  100% { transform: translateY(-0%); }
+  0% {
+    transform: translateY(-0%);
+  }
+
+  20% {
+    transform: translateY(-21%);
+  }
+
+  40% {
+    transform: translateY(-41%);
+  }
+
+  60% {
+    transform: translateY(-61%);
+  }
+
+  80% {
+    transform: translateY(-81%);
+  }
+
+  100% {
+    transform: translateY(-0%);
+  }
 }
 
 /* Hero Text slider ends */
 
 .gradient-line {
   width: 2px;
-  background: linear-gradient(
-    0deg,
-    rgba(69, 222, 196, 0) 0%,
-    #62e0ff 25%,
-    #52aeff 37.51%,
-    #fd5c79 62.83%,
-    #6d45ce 92.91%
-  );
+  background: linear-gradient(0deg,
+      rgba(69, 222, 196, 0) 0%,
+      #62e0ff 25%,
+      #52aeff 37.51%,
+      #fd5c79 62.83%,
+      #6d45ce 92.91%);
 }
 
 .gradient-edge:nth-of-type(1) {
   left: 0;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 100%);
 }
+
 .gradient-edge:nth-of-type(2) {
   right: 0;
-  background: linear-gradient(
-    -90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(-90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 100%);
 }
 
 /* marquee */
@@ -412,6 +432,7 @@ section {
   overflow: hidden;
   position: relative;
 }
+
 .marquee-box {
   display: flex;
   align-items: center;
@@ -421,17 +442,21 @@ section {
   overflow: hidden;
   animation: marquee 30s linear infinite;
 }
+
 .marquee-item {
   float: left;
 }
+
 @keyframes marquee {
   0% {
     left: 0;
   }
+
   100% {
     left: -50%;
   }
 }
+
 /* marquee end */
 
 .card {
@@ -455,12 +480,10 @@ section {
   background: var(--gradient);
   background-attachment: fixed;
   mask: linear-gradient(#0000, #0000),
-    conic-gradient(
-      from calc((var(--start) - 15) * 1deg),
+    conic-gradient(from calc((var(--start) - 15) * 1deg),
       #ffffff1f 0deg,
       white,
-      #ffffff00 100deg
-    );
+      #ffffff00 100deg);
   mask-composite: intersect;
   mask-clip: padding-box, border-box;
   opacity: 0;
@@ -482,44 +505,60 @@ section {
 .card:hover::before {
   opacity: 1;
 }
+
 .carousel {
-  width: 100%; 
-  overflow: hidden; 
+  width: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .innerPart {
   display: flex;
-  width: max-content; 
-  animation: cardScroll 320s linear infinite; 
+  width: max-content;
+  animation: cardScroll 320s linear infinite;
 }
+
 .innerPart2 {
   display: flex;
-  width: max-content; 
-  animation: cardScroll2 320s linear infinite; 
+  width: max-content;
+  animation: cardScroll2 320s linear infinite;
 }
 
 .vrcCard {
   width: 25em;
   height: 15em;
   padding: 1em;
-  flex-shrink: 0; /* make sure it doesnt get compressed */
-  will-change: transform; /*reduce cpu load*/
+  flex-shrink: 0;
+  /* make sure it doesnt get compressed */
+  will-change: transform;
+  /*reduce cpu load*/
 }
+
 @media (max-width: 768px) {
-    .vrcCard:hover {
-        transform: none; /* remove hover at phone */
-    }
+  .vrcCard:hover {
+    transform: none;
+    /* remove hover at phone */
+  }
 }
 
 @keyframes cardScroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); } 
-}
-@keyframes cardScroll2 {
-  from { transform: translateX(-50%); }
-  to { transform: translateX(0); } 
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
+@keyframes cardScroll2 {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

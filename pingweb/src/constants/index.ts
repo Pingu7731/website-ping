@@ -230,3 +230,9 @@ export const dropImg = [
     { name: "zp", path: zp },
 
 ]
+export const heroVideo = [
+    { name: "test", path: "/videos/chalo.webm" },
+    { name: "test", path: "/videos/bunny.webm" },
+    { name: "test", path: "/videos/foshunia.webm" },
+    { name: "test", path: "/videos/yopte.webm" },
+]
