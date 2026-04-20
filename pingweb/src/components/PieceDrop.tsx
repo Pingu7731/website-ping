@@ -26,8 +26,24 @@ const PieceDrop: React.FC = () => {
             },
         });
 
-        Render.run(render);
-        Runner.run(Runner.create(), engine);
+        const runner = Runner.create();
+        let isRunning = false;
+
+        const startEngine = () => {
+            if (!isRunning) {
+                Render.run(render);
+                Runner.run(runner, engine);
+                isRunning = true;
+            }
+        };
+
+        const stopEngine = () => {
+            if (isRunning) {
+                Render.stop(render);
+                Runner.stop(runner);
+                isRunning = false;
+            }
+        };
 
         const ground = Bodies.rectangle(width / 2, height + 10, width, 40, {
             isStatic: true,
@@ -57,9 +73,20 @@ const PieceDrop: React.FC = () => {
             });
 
             World.add(world, box);
+            startEngine();
 
             setTimeout(() => {
+                // remove firtst
                 World.remove(world, box);
+
+                if (world.bodies.length <= 1) {
+                    // delay a bit before disabling runner
+                    setTimeout(() => {
+                        if (world.bodies.length <= 1) {
+                            stopEngine();
+                        }
+                    }, 100);
+                }
             }, 4500);
         };
 
@@ -67,7 +94,7 @@ const PieceDrop: React.FC = () => {
 
         return () => {
             window.removeEventListener("click", handleClick);
-            Render.stop(render);
+            stopEngine();
             World.clear(world, false);
             Engine.clear(engine);
             render.canvas.remove();

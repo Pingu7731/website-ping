@@ -13,7 +13,7 @@ const Hero = () => {
             { y: 0, opacity: 1, stagger: 0.15, duration: 0.7, ease: 'power2.inOut' }//end at ....
         )
 
-    })
+    }, [])
     return (
         <section id="hero" className="relative overflow-hidden">
             <div className="absolute top-0 left-0 z-10 ">
@@ -35,11 +35,6 @@ const Hero = () => {
                                         {names.map((word) => (
                                             <span key={word.name} className="flex items-center md:gap-3 gap-1 pb-2">
 
-                                                {/* <img 
-                    src="" 
-                    alt=""
-                    className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
-                     /> */}
                                                 <span>{word.name}</span>
                                             </span>
 
@@ -68,8 +63,6 @@ const Hero = () => {
                 </figure>
             </div>
             <AnimatedCounter />
-
-
 
         </section>
     )
