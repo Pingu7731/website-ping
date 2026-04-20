@@ -10,29 +10,29 @@ export const HeroExperience = () => {
 
             {/*Videos */}
             {heroVideo.map((src, index) => (
-                // <video
-                //     key={index}
-                //     src={src.path}
-                //     autoPlay
-                //     muted
-                //     loop
-                //     // playsInline
-                //     className={`absolute top-0 aspect-video object-cover transition-opacity duration-700
-                //         ${active === index ? "opacity-100 z-10" : "opacity-0 z-0"}
-                //     `}
-                // />
-                //TODO : Remake LOOPED video
-                <ChromaKeyVideo
+                <video
+                    key={index}
                     src={src.path}
-                    // similarity={0.4}  // more aggressive removal
-                    blend={0.3}       // softer edges
-                    despill={true}    // clean up color fringing
-                    loop={true}
-                    autoPlay={true}
+                    autoPlay
+                    muted
+                    loop
+                    // playsInline
                     className={`absolute top-0 aspect-video object-cover transition-opacity duration-700
-                         ${active === index ? "opacity-100 z-10" : "opacity-0 z-0"}
-                     `}
+                        ${active === index ? "opacity-100 z-10" : "opacity-0 z-0"}
+                    `}
                 />
+                //TODO : Remake LOOPED video
+                // <ChromaKeyVideo
+                //     src={src.path}
+                //     // similarity={0.4}  // more aggressive removal
+                //     blend={0.3}       // softer edges
+                //     despill={true}    // clean up color fringing
+                //     loop={true}
+                //     autoPlay={true}
+                //     className={`absolute top-0 aspect-video object-cover transition-opacity duration-700
+                //          ${active === index ? "opacity-100 z-10" : "opacity-0 z-0"}
+                //      `}
+                // />
             ))}
             {/*Right Navbar */}
 

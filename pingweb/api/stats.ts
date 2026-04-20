@@ -27,7 +27,7 @@ export default async function handler(
             const errorText = await response.text();
             return res.status(response.status).json({ error: 'SE API Error', details: errorText });
         }
-
+        
         const data = await response.json();
 
         return res.status(200).json(data);
