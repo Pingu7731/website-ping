@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { heroVideo } from "../../constants";
-import { ChromaKeyVideo } from 'chromakey-video-react';
+
 export const HeroExperience = () => {
     const [active, setActive] = useState(0);
 
@@ -22,17 +22,7 @@ export const HeroExperience = () => {
                     `}
                 />
                 //TODO : Remake LOOPED video
-                // <ChromaKeyVideo
-                //     src={src.path}
-                //     // similarity={0.4}  // more aggressive removal
-                //     blend={0.3}       // softer edges
-                //     despill={true}    // clean up color fringing
-                //     loop={true}
-                //     autoPlay={true}
-                //     className={`absolute top-0 aspect-video object-cover transition-opacity duration-700
-                //          ${active === index ? "opacity-100 z-10" : "opacity-0 z-0"}
-                //      `}
-                // />
+               
             ))}
             {/*Right Navbar */}
 
