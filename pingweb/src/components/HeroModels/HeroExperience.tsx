@@ -17,7 +17,7 @@ export const HeroExperience = () => {
                     muted
                     loop
                     // playsInline
-                    className={`absolute top-0 aspect-video object-cover transition-opacity duration-700
+                    className={`absolute top-[20vh] xl:top-0 aspect-video object-cover transition-opacity duration-700
                         ${active === index ? "opacity-100 z-10" : "opacity-0 z-0"}
                     `}
                 />
