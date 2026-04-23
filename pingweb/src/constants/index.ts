@@ -231,8 +231,8 @@ export const dropImg = [
 
 ]
 export const heroVideo = [
-    { name: "test", path: "/videos/chalo.webm" },
-    { name: "test", path: "/videos/bunny.webm" },
-    { name: "test", path: "/videos/foshunia.webm" },
-    { name: "test", path: "/videos/yopte.webm" },
+    { name: "chalo", path: "/videos/chalo.webm" },
+    { name: "foshunia", path: "/videos/foshunia.webm" },
+    { name: "yopte", path: "/videos/yopte.webm" },
+    { name: "yue", path: "/videos/yue.webm" },
 ]
