@@ -65,7 +65,7 @@ const AnimatedCounter = () => {
     }, []);
 
     return (
-        <div ref={ref} id="counter" className="padding-x-lg xl:mt-0 mt-32">
+        <div ref={ref} id="counter" className="padding-x-lg xl:mt-0 ">
             <div className="mx-auto grid-4-cols gap-4">
                 {dynamicItems.map((item, idx) => (
                     <div key={idx} className='bg-zinc-900 rounded-lg p-10 flex flex-col justify-center min-h-50'>
@@ -77,7 +77,7 @@ const AnimatedCounter = () => {
                                 ) : Array.isArray(item.value) ? (
                                     <TextSlider texts={item.value} />
                                 ) : (
-                                    item.value // 一般字串直接顯示
+                                    item.value
                                 )
                             ) : (
                                 0

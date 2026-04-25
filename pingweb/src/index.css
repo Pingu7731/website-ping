@@ -400,6 +400,12 @@ section {
 }
 
 @media (max-width: 768px) {
+  .vrcCard {
+    width: 13em;
+    height: 8em;
+    padding: 0.25em;
+  }
+  
   .vrcCard:hover {
     transform: none;
     /* remove hover at phone */
