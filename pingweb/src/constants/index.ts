@@ -19,6 +19,7 @@ import live2d from "../images/MileStoneSS/live2d.webp"
 import mamehinata from "../images/MileStoneSS/mamehinata.webp"
 import wolfVtube from "../images/MileStoneSS/wolfVtube.webp"
 import BongoCat from "../images/MileStoneSS/BongoCat.webp"
+import fursuit from "../images/MileStoneSS/fursuit.webp"
 import vrc from "../images/MileStoneSS/vrc.webp"
 import longHairHuman from "../images/MileStoneSS/longHairHuman.webp"
 import TBContinued from "../images/MileStoneSS/TBC.png"
@@ -126,7 +127,7 @@ export const iconsList = [
 
 export const milestoneCard = [
     { imgPath: wolfVtube, desc: "First model that I used for Vtubing,it was free from FaceRig lmaoaoaoao ", title: "First stream! ", date: "2020/11/30", link: "https://www.youtube.com/watch?v=Mi3CTiExTsI" },
-    { imgPath: BongoCat, desc: "This was only used when im playing Osu or when my old laptop couldnt handle the game much", title: "The Bongo", date: "2020 December", link: "https://www.youtube.com/watch?v=ihQv5GUDdkw" },
+    { imgPath: BongoCat, desc: "This was only used when im playing Osu or when my old laptop couldnt handle the game much", title: "The Bongo Cat", date: "2020 December", link: "https://www.youtube.com/watch?v=ihQv5GUDdkw" },
     { imgPath: live2d, desc: "The Live2D I made, it only lasted for two weeks and I abandoned him XD", title: "First Live2D Model", date: "Somewhere head of 2021 I forget", link: "https://www.youtube.com/watch?v=-BtinMv3X30" },
     { imgPath: firstMadethreeDModel, desc: "I discovered Vroid Studio, starting to try making my own avatar, theres no premade hair that time at the old vroid,thats why the hair is very scuffed.", title: "The 3D Era Starts Here", date: "2021 January", link: "https://www.youtube.com/watch?v=0KyIIhRs-ec" },
     { imgPath: longHairHuman, desc: "Vroid Studio had a update tha you can just customize character by clicking those presets, so I reworked the model with a new hair! Its gonna be long hair because i like it >:3", title: "The Long Hair Ping", date: "2021 December", link: "https://www.youtube.com/watch?v=2r-xnfZ7TNQ" },
@@ -135,6 +136,7 @@ export const milestoneCard = [
     { imgPath: vrc, desc: "Starting to stream VRChat on my stream in VR with New PC! (I starved two month for that lololol, and my VR headset was broken so I have to bought a new one as well D: )  ", title: "VRChat Streams Added To List  ", date: "2024 March", link: "https://www.twitch.tv/ping7731/clip/AuspiciousObliviousPancakeGingerPower-6F4p978ZU4Kwk1fz?filter=clips&range=all&sort=time" },
     { imgPath: foshunia, desc: "Discoverd VNyan ,swapped from VSeeFace to VNyan for better interaction on stream. With more new reedeems, more fun ", title: "New Cloths for Ping", date: "Mid 2025 I think", link: "https://www.twitch.tv/ping7731/clip/AbrasiveCleverPotPJSugar-q3YVeerh11fg5XKV?filter=clips&range=all&sort=time" },
     { imgPath: fbt, desc: "Bought full body tracking, it was a pretty nice deal so I ordered it at the midnight (It was an accident trust trust) ", title: "Full Body Tracking Added", date: "2026 March", link: "https://www.twitch.tv/ping7731/clip/GrotesqueResoluteGarbageDatSheffy-nBerMYYXrX7pRZD7?filter=clips&range=all&sort=time" },
+    { imgPath: fursuit, desc: "Im not a furry pls trust, next time you see me say hi to me at furcon! you'll get a sticker :3 ", title: "Got A Fursuit >:D", date: "2026/04/11", link: "https://x.com/Ping_7731/status/2042684644429303875?s=20" },
     { imgPath: TBContinued, desc: "The Journey Keep Going !", title: "To Be Continued", date: "Soon™", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
 ]
 
