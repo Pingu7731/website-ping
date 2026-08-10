@@ -21,6 +21,7 @@ import wolfVtube from "../images/MileStoneSS/wolfVtube.webp"
 import BongoCat from "../images/MileStoneSS/BongoCat.webp"
 import fursuit from "../images/MileStoneSS/fursuit.webp"
 import vrc from "../images/MileStoneSS/vrc.webp"
+import ARKit from "../images/MileStoneSS/ARKit.png"
 import longHairHuman from "../images/MileStoneSS/longHairHuman.webp"
 import TBContinued from "../images/MileStoneSS/TBC.png"
 import akime from "../images/vrcPhotos/akime.webp"
@@ -137,6 +138,7 @@ export const milestoneCard = [
     { imgPath: foshunia, desc: "Discoverd VNyan ,swapped from VSeeFace to VNyan for better interaction on stream. With more new reedeems, more fun ", title: "New Cloths for Ping", date: "Mid 2025 I think", link: "https://www.twitch.tv/ping7731/clip/AbrasiveCleverPotPJSugar-q3YVeerh11fg5XKV?filter=clips&range=all&sort=time" },
     { imgPath: fbt, desc: "Bought full body tracking, it was a pretty nice deal so I ordered it at the midnight (It was an accident trust trust) ", title: "Full Body Tracking Added", date: "2026 March", link: "https://www.twitch.tv/ping7731/clip/GrotesqueResoluteGarbageDatSheffy-nBerMYYXrX7pRZD7?filter=clips&range=all&sort=time" },
     { imgPath: fursuit, desc: "Im not a furry pls trust, next time you see me say hi to me at furcon! you'll get a sticker :3 ", title: "Got A Fursuit >:D", date: "2026/04/11", link: "https://x.com/Ping_7731/status/2042684644429303875?s=20" },
+    { imgPath: ARKit, desc: "Bought a 2nd hand iPhone for this. I am now playing candy crush on the phone lol ", title: "ARKit Added to Face Tracking ! :D", date: "2026/07/31", link: "https://x.com/Ping7731/status/2082992205023813953?s=20" },
     { imgPath: TBContinued, desc: "The Journey Keep Going !", title: "To Be Continued", date: "Soon™", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
 ]
 
@@ -155,7 +157,7 @@ export const socialIcons = [
 
 export const socialImage = [
     { name: "gmail", url: "mailto:pingping7731@gmail.com?subject=Contacting%20from%20your%20website", imgPath: gmailIcon, target: "" },
-    { name: "X.com", url: "https://x.com/Ping_7731", imgPath: X, target: "_blank" },
+    { name: "X.com", url: "https://x.com/Ping7731", imgPath: X, target: "_blank" },
     { name: "bsky", url: "https://bsky.app/profile/ping7731.bsky.social", imgPath: bluesky, target: "_blank" },
     { name: "tetrio", url: "https://ch.tetr.io/u/ping7731", imgPath: tetrioBlackwhite, target: "_blank" },
     { name: "osu", url: "https://osu.ppy.sh/users/7289284", imgPath: osu, target: "_blank" },
