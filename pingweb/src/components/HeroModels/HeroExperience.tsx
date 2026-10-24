@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { heroVideo } from "../../constants";
 
 export const HeroExperience = () => {
     const [active, setActive] = useState(0);
+    const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
     useEffect(() => {
         let intervalId: ReturnType<typeof setInterval>;
@@ -26,6 +27,18 @@ export const HeroExperience = () => {
         };
     }, []);
 
+    useEffect(() => {
+        videoRefs.current.forEach((video, index) => {
+            if (!video) return;
+
+            if (index === active) {
+                void video.play().catch(() => {});
+            } else {
+                video.pause();
+            }
+        });
+    }, [active]);
+
 
     return (
         <div className="relative w-full h-screen overflow-hidden">
@@ -34,11 +47,13 @@ export const HeroExperience = () => {
             {heroVideo.map((src, index) => (
                 <video
                     key={index}
+                    ref={(video) => { videoRefs.current[index] = video; }}
                     src={src.path}
-                    autoPlay
+                    autoPlay={active === index}
                     muted
                     loop
-                    // playsInline
+                    playsInline
+                    preload={active === index ? "metadata" : "none"}
                     className={`absolute top-[20vh] xl:top-0 aspect-video object-cover transition-opacity duration-700
                         ${active === index ? "opacity-100 z-10" : "opacity-0 z-0"}
                     `}

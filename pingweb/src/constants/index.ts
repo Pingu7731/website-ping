@@ -24,6 +24,16 @@ import vrc from "../images/MileStoneSS/vrc.webp"
 import ARKit from "../images/MileStoneSS/ARKit.png"
 import longHairHuman from "../images/MileStoneSS/longHairHuman.webp"
 import TBContinued from "../images/MileStoneSS/TBC.png"
+import wolfVtubeMobile from "../images/MileStoneSS/mobile/wolfVtube.webp"
+import BongoCatMobile from "../images/MileStoneSS/mobile/BongoCat.webp"
+import live2dMobile from "../images/MileStoneSS/mobile/live2d.webp"
+import firstMadethreeDModelMobile from "../images/MileStoneSS/mobile/firstMadethreeDModel.webp"
+import longHairHumanMobile from "../images/MileStoneSS/mobile/longHairHuman.webp"
+import mamehinataMobile from "../images/MileStoneSS/mobile/mamehinata.webp"
+import foshuniafirstMobile from "../images/MileStoneSS/mobile/foshuniafirst.webp"
+import vrcMobile from "../images/MileStoneSS/mobile/vrc.webp"
+import foshuniaMobile from "../images/MileStoneSS/mobile/foshunia.webp"
+import fbtMobile from "../images/MileStoneSS/mobile/fbt.webp"
 import akime from "../images/vrcPhotos/akime.webp"
 import alotalotpeopleagain2 from "../images/vrcPhotos/alotalotpeopleagain2.webp"
 import alotpeople from "../images/vrcPhotos/alotpeople.webp"
@@ -141,6 +151,19 @@ export const milestoneCard = [
     { imgPath: ARKit, desc: "Bought a 2nd hand iPhone for this. I am now playing candy crush on the phone lol ", title: "ARKit Added to Face Tracking ! :D", date: "2026/07/31", link: "https://x.com/Ping7731/status/2082992205023813953?s=20" },
     { imgPath: TBContinued, desc: "The Journey Keep Going !", title: "To Be Continued", date: "Soon™", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
 ]
+
+export const mobileMilestoneImages: Record<string, string> = {
+    [wolfVtube]: wolfVtubeMobile,
+    [BongoCat]: BongoCatMobile,
+    [live2d]: live2dMobile,
+    [firstMadethreeDModel]: firstMadethreeDModelMobile,
+    [longHairHuman]: longHairHumanMobile,
+    [mamehinata]: mamehinataMobile,
+    [foshuniafirst]: foshuniafirstMobile,
+    [vrc]: vrcMobile,
+    [foshunia]: foshuniaMobile,
+    [fbt]: fbtMobile,
+}
 
 export const socialIcons = [
     //rotation [上下，左右，正面水平旋轉]

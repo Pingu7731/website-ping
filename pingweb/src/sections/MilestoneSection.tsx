@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GlowCard from "../components/GlowCard";
 import TitleHeader from "../components/TitleHeader";
-import { milestoneCard } from "../constants";
+import { milestoneCard, mobileMilestoneImages } from "../constants";
 import { useRef } from "react";
 
 // Register ScrollTrigger so GSAP knows how to use it
@@ -82,12 +82,21 @@ const MilestoneSection = () => {
                                     className="block cursor-pointer hover:opacity-90 transition-opacity"
                                 >
                                     <GlowCard card={card} index={i}>
-                                        <img
-                                            src={card.imgPath}
-                                            alt={card.title}
-                                            className="rounded-lg"
-                                            loading="lazy"
-                                        />
+                                        <picture>
+                                            {mobileMilestoneImages[card.imgPath] && (
+                                                <source
+                                                    media="(max-width: 640px)"
+                                                    srcSet={mobileMilestoneImages[card.imgPath]}
+                                                />
+                                            )}
+                                            <img
+                                                src={card.imgPath}
+                                                alt={card.title}
+                                                className="rounded-lg"
+                                                loading="lazy"
+                                                decoding="async"
+                                            />
+                                        </picture>
 
                                     </GlowCard>
                                 </a>

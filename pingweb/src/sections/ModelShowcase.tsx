@@ -68,6 +68,8 @@ const ModelShowcase = () => {
                                     <img src={item.img}
                                         alt=""
                                         className={item.pos}
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                 </a>
                             </div>

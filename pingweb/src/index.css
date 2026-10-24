@@ -16,7 +16,7 @@ body {
 }
 
 section {
-  width: 100dvw;
+  width: 100%;
 }
 
 @theme {
@@ -333,7 +333,7 @@ section {
 .card::before {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 100dvw;
   height: 100%;
   left: 50%;
   top: 50%;
@@ -395,8 +395,6 @@ section {
   padding: 1em;
   flex-shrink: 0;
   /* make sure it doesnt get compressed */
-  will-change: transform;
-  /*reduce cpu load*/
 }
 
 @media (max-width: 768px) {
@@ -409,7 +407,8 @@ section {
   .vrcCard:hover {
     transform: none;
     /* remove hover at phone */
-  }
+  will-change: transform;
+  /*reduce cpu load*/
 }
 
 @keyframes cardScroll {
@@ -430,4 +429,5 @@ section {
   to {
     transform: translateX(0);
   }
+}
 }
