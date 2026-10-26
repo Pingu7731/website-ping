@@ -1,9 +1,12 @@
 import { useState, useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
 import { heroVideo } from "../../constants";
 
 export const HeroExperience = () => {
     const [active, setActive] = useState(0);
     const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+    // pause everything when scrolled away from hero
+    const { ref: containerRef, inView } = useInView({ initialInView: true });
 
     useEffect(() => {
         let intervalId: ReturnType<typeof setInterval>;
@@ -11,7 +14,7 @@ export const HeroExperience = () => {
         const handleResize = () => {
             clearInterval(intervalId);
             // Only auto-play on mobile devices (width < 640px)
-            if (window.innerWidth < 640) {
+            if (window.innerWidth < 640 && inView) {
                 intervalId = setInterval(() => {
                     setActive((prevActive) => (prevActive + 1) % heroVideo.length);
                 }, 8000);
@@ -25,23 +28,23 @@ export const HeroExperience = () => {
             clearInterval(intervalId);
             window.removeEventListener("resize", handleResize);
         };
-    }, []);
+    }, [inView]);
 
     useEffect(() => {
         videoRefs.current.forEach((video, index) => {
             if (!video) return;
 
-            if (index === active) {
+            if (index === active && inView) {
                 void video.play().catch(() => {});
             } else {
                 video.pause();
             }
         });
-    }, [active]);
+    }, [active, inView]);
 
 
     return (
-        <div className="relative w-full h-screen overflow-hidden">
+        <div ref={containerRef} className="relative w-full h-screen overflow-hidden">
 
             {/*Videos */}
             {heroVideo.map((src, index) => (
@@ -54,7 +57,7 @@ export const HeroExperience = () => {
                     loop
                     playsInline
                     preload={active === index ? "metadata" : "none"}
-                    className={`absolute top-[20vh] xl:top-0 aspect-video object-cover transition-opacity duration-700
+                    className={`absolute top-[20vh] xl:top-0 xl:w-[80rem] aspect-video object-cover transition-opacity duration-700
                         ${active === index ? "opacity-100 z-10" : "opacity-0 z-0"}
                     `}
                 />

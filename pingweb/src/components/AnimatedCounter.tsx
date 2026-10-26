@@ -68,8 +68,9 @@ const AnimatedCounter = () => {
         <div ref={ref} id="counter" className="padding-x-lg xl:mt-0 ">
             <div className="mx-auto grid-4-cols gap-4">
                 {dynamicItems.map((item, idx) => (
-                    <div key={idx} className='bg-zinc-900 rounded-lg p-10 flex flex-col justify-center min-h-50'>
-                        <div className='counter-number text-white text-5xl font-bold mb-2'>
+                    <div key={idx} className='bg-zinc-900 rounded-lg p-10 md:px-6 2xl:px-10 flex flex-col justify-center min-h-50'>
+                        {/* a bit smaller on tablet / small desktop monitors (narrow cards) so the big number doesnt wrap */}
+                        <div className='counter-number text-white text-5xl md:max-lg:text-4xl xl:max-2xl:text-4xl font-bold mb-2'>
                             {inView ? (
                                 // 判斷號碼
                                 typeof item.value === 'number' ? (

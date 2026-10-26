@@ -24,16 +24,16 @@ import vrc from "../images/MileStoneSS/vrc.webp"
 import ARKit from "../images/MileStoneSS/ARKit.png"
 import longHairHuman from "../images/MileStoneSS/longHairHuman.webp"
 import TBContinued from "../images/MileStoneSS/TBC.png"
-import wolfVtubeMobile from "../images/MileStoneSS/mobile/wolfVtube.webp"
-import BongoCatMobile from "../images/MileStoneSS/mobile/BongoCat.webp"
-import live2dMobile from "../images/MileStoneSS/mobile/live2d.webp"
-import firstMadethreeDModelMobile from "../images/MileStoneSS/mobile/firstMadethreeDModel.webp"
-import longHairHumanMobile from "../images/MileStoneSS/mobile/longHairHuman.webp"
-import mamehinataMobile from "../images/MileStoneSS/mobile/mamehinata.webp"
-import foshuniafirstMobile from "../images/MileStoneSS/mobile/foshuniafirst.webp"
-import vrcMobile from "../images/MileStoneSS/mobile/vrc.webp"
-import foshuniaMobile from "../images/MileStoneSS/mobile/foshunia.webp"
-import fbtMobile from "../images/MileStoneSS/mobile/fbt.webp"
+import wolfVtubeVideo from "../images/MileStoneSS/video/wolfVtube.mp4"
+import BongoCatVideo from "../images/MileStoneSS/video/BongoCat.mp4"
+import live2dVideo from "../images/MileStoneSS/video/live2d.mp4"
+import firstMadethreeDModelVideo from "../images/MileStoneSS/video/firstMadethreeDModel.mp4"
+import longHairHumanVideo from "../images/MileStoneSS/video/longHairHuman.mp4"
+import mamehinataVideo from "../images/MileStoneSS/video/mamehinata.mp4"
+import foshuniafirstVideo from "../images/MileStoneSS/video/foshuniafirst.mp4"
+import vrcVideo from "../images/MileStoneSS/video/vrc.mp4"
+import foshuniaVideo from "../images/MileStoneSS/video/foshunia.mp4"
+import fbtVideo from "../images/MileStoneSS/video/fbt.mp4"
 import akime from "../images/vrcPhotos/akime.webp"
 import alotalotpeopleagain2 from "../images/vrcPhotos/alotalotpeopleagain2.webp"
 import alotpeople from "../images/vrcPhotos/alotpeople.webp"
@@ -137,33 +137,20 @@ export const iconsList = [
 ]
 
 export const milestoneCard = [
-    { imgPath: wolfVtube, desc: "First model that I used for Vtubing,it was free from FaceRig lmaoaoaoao ", title: "First stream! ", date: "2020/11/30", link: "https://www.youtube.com/watch?v=Mi3CTiExTsI" },
-    { imgPath: BongoCat, desc: "This was only used when im playing Osu or when my old laptop couldnt handle the game much", title: "The Bongo Cat", date: "2020 December", link: "https://www.youtube.com/watch?v=ihQv5GUDdkw" },
-    { imgPath: live2d, desc: "The Live2D I made, it only lasted for two weeks and I abandoned him XD", title: "First Live2D Model", date: "Somewhere head of 2021 I forget", link: "https://www.youtube.com/watch?v=-BtinMv3X30" },
-    { imgPath: firstMadethreeDModel, desc: "I discovered Vroid Studio, starting to try making my own avatar, theres no premade hair that time at the old vroid,thats why the hair is very scuffed.", title: "The 3D Era Starts Here", date: "2021 January", link: "https://www.youtube.com/watch?v=0KyIIhRs-ec" },
-    { imgPath: longHairHuman, desc: "Vroid Studio had a update tha you can just customize character by clicking those presets, so I reworked the model with a new hair! Its gonna be long hair because i like it >:3", title: "The Long Hair Ping", date: "2021 December", link: "https://www.youtube.com/watch?v=2r-xnfZ7TNQ" },
-    { imgPath: mamehinata, desc: "This is where I learned that I can customize a VRChat AVI and export it to .VRM format for Vtubing. It got swapped due to some people saying it doesnt really fit my voice x3", title: "The Chibi Ping", date: "2023 January", link: "https://www.twitch.tv/ping7731/clip/TenderEagerMangetoutPeoplesChamp-4yxWpppdnasGzxCQ?filter=clips&range=all&sort=time" },
-    { imgPath: foshuniafirst, desc: "Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. ", title: "Discovered a Furry Model", date: "2024 January", link: "https://www.twitch.tv/ping7731/clip/KathishFlaccidKimchiCeilingCat-PCnhQg3veB2BLN1I?filter=clips&range=all&sort=time" },
-    { imgPath: vrc, desc: "Starting to stream VRChat on my stream in VR with New PC! (I starved two month for that lololol, and my VR headset was broken so I have to bought a new one as well D: )  ", title: "VRChat Streams Added To List  ", date: "2024 March", link: "https://www.twitch.tv/ping7731/clip/AuspiciousObliviousPancakeGingerPower-6F4p978ZU4Kwk1fz?filter=clips&range=all&sort=time" },
-    { imgPath: foshunia, desc: "Discoverd VNyan ,swapped from VSeeFace to VNyan for better interaction on stream. With more new reedeems, more fun ", title: "New Cloths for Ping", date: "Mid 2025 I think", link: "https://www.twitch.tv/ping7731/clip/AbrasiveCleverPotPJSugar-q3YVeerh11fg5XKV?filter=clips&range=all&sort=time" },
-    { imgPath: fbt, desc: "Bought full body tracking, it was a pretty nice deal so I ordered it at the midnight (It was an accident trust trust) ", title: "Full Body Tracking Added", date: "2026 March", link: "https://www.twitch.tv/ping7731/clip/GrotesqueResoluteGarbageDatSheffy-nBerMYYXrX7pRZD7?filter=clips&range=all&sort=time" },
+    { imgPath: wolfVtube, video: wolfVtubeVideo, desc: "First model that I used for Vtubing,it was free from FaceRig lmaoaoaoao ", title: "First stream! ", date: "2020/11/30", link: "https://www.youtube.com/watch?v=Mi3CTiExTsI" },
+    { imgPath: BongoCat, video: BongoCatVideo, desc: "This was only used when im playing Osu or when my old laptop couldnt handle the game much", title: "The Bongo Cat", date: "2020 December", link: "https://www.youtube.com/watch?v=ihQv5GUDdkw" },
+    { imgPath: live2d, video: live2dVideo, desc: "The Live2D I made, it only lasted for two weeks and I abandoned him XD", title: "First Live2D Model", date: "Somewhere head of 2021 I forget", link: "https://www.youtube.com/watch?v=-BtinMv3X30" },
+    { imgPath: firstMadethreeDModel, video: firstMadethreeDModelVideo, desc: "I discovered Vroid Studio, starting to try making my own avatar, theres no premade hair that time at the old vroid,thats why the hair is very scuffed.", title: "The 3D Era Starts Here", date: "2021 January", link: "https://www.youtube.com/watch?v=0KyIIhRs-ec" },
+    { imgPath: longHairHuman, video: longHairHumanVideo, desc: "Vroid Studio had a update tha you can just customize character by clicking those presets, so I reworked the model with a new hair! Its gonna be long hair because i like it >:3", title: "The Long Hair Ping", date: "2021 December", link: "https://www.youtube.com/watch?v=2r-xnfZ7TNQ" },
+    { imgPath: mamehinata, video: mamehinataVideo, desc: "This is where I learned that I can customize a VRChat AVI and export it to .VRM format for Vtubing. It got swapped due to some people saying it doesnt really fit my voice x3", title: "The Chibi Ping", date: "2023 January", link: "https://www.twitch.tv/ping7731/clip/TenderEagerMangetoutPeoplesChamp-4yxWpppdnasGzxCQ?filter=clips&range=all&sort=time" },
+    { imgPath: foshuniafirst, video: foshuniafirstVideo, desc: "Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. Im not a furry. ", title: "Discovered a Furry Model", date: "2024 January", link: "https://www.twitch.tv/ping7731/clip/KathishFlaccidKimchiCeilingCat-PCnhQg3veB2BLN1I?filter=clips&range=all&sort=time" },
+    { imgPath: vrc, video: vrcVideo, desc: "Starting to stream VRChat on my stream in VR with New PC! (I starved two month for that lololol, and my VR headset was broken so I have to bought a new one as well D: )  ", title: "VRChat Streams Added To List  ", date: "2024 March", link: "https://www.twitch.tv/ping7731/clip/AuspiciousObliviousPancakeGingerPower-6F4p978ZU4Kwk1fz?filter=clips&range=all&sort=time" },
+    { imgPath: foshunia, video: foshuniaVideo, desc: "Discoverd VNyan ,swapped from VSeeFace to VNyan for better interaction on stream. With more new reedeems, more fun ", title: "New Cloths for Ping", date: "Mid 2025 I think", link: "https://www.twitch.tv/ping7731/clip/AbrasiveCleverPotPJSugar-q3YVeerh11fg5XKV?filter=clips&range=all&sort=time" },
+    { imgPath: fbt, video: fbtVideo, desc: "Bought full body tracking, it was a pretty nice deal so I ordered it at the midnight (It was an accident trust trust) ", title: "Full Body Tracking Added", date: "2026 March", link: "https://www.twitch.tv/ping7731/clip/GrotesqueResoluteGarbageDatSheffy-nBerMYYXrX7pRZD7?filter=clips&range=all&sort=time" },
     { imgPath: fursuit, desc: "Im not a furry pls trust, next time you see me say hi to me at furcon! you'll get a sticker :3 ", title: "Got A Fursuit >:D", date: "2026/04/11", link: "https://x.com/Ping_7731/status/2042684644429303875?s=20" },
     { imgPath: ARKit, desc: "Bought a 2nd hand iPhone for this. I am now playing candy crush on the phone lol ", title: "ARKit Added to Face Tracking ! :D", date: "2026/07/31", link: "https://x.com/Ping7731/status/2082992205023813953?s=20" },
     { imgPath: TBContinued, desc: "The Journey Keep Going !", title: "To Be Continued", date: "Soon™", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
 ]
-
-export const mobileMilestoneImages: Record<string, string> = {
-    [wolfVtube]: wolfVtubeMobile,
-    [BongoCat]: BongoCatMobile,
-    [live2d]: live2dMobile,
-    [firstMadethreeDModel]: firstMadethreeDModelMobile,
-    [longHairHuman]: longHairHumanMobile,
-    [mamehinata]: mamehinataMobile,
-    [foshuniafirst]: foshuniafirstMobile,
-    [vrc]: vrcMobile,
-    [foshunia]: foshuniaMobile,
-    [fbt]: fbtMobile,
-}
 
 export const socialIcons = [
     //rotation [上下，左右，正面水平旋轉]

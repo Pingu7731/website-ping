@@ -3,11 +3,60 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GlowCard from "../components/GlowCard";
 import TitleHeader from "../components/TitleHeader";
-import { milestoneCard, mobileMilestoneImages } from "../constants";
-import { useRef } from "react";
+import { milestoneCard } from "../constants";
+import { useEffect, useRef, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 // Register ScrollTrigger so GSAP knows how to use it
 gsap.registerPlugin(ScrollTrigger);
+
+// Animated clips are mp4 (much smaller + phone can decode it with hardware than the animated webp)
+const MilestoneMedia = ({ card }: { card: (typeof milestoneCard)[number] }) => {
+    const videoRef = useRef<HTMLVideoElement | null>(null);
+    // phone low power mode can block autoplay, show the animated webp instead
+    const [blocked, setBlocked] = useState(false);
+    const { ref, inView } = useInView({ rootMargin: "600px 0px" });
+
+    useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+
+        if (inView) {
+            video.play().catch((err) => {
+                if (err.name === "NotAllowedError") setBlocked(true);
+            });
+        } else {
+            video.pause();
+        }
+    }, [inView]);
+
+    if (!card.video || blocked) {
+        return (
+            <img
+                src={card.imgPath}
+                alt={card.title}
+                className="rounded-lg w-full"
+                loading="lazy"
+                decoding="async"
+            />
+        );
+    }
+
+    return (
+        <video
+            ref={(el) => { videoRef.current = el; ref(el); }}
+            src={card.video}
+            width={800}
+            height={450}
+            muted
+            loop
+            playsInline
+            preload="none"
+            aria-label={card.title}
+            className="rounded-lg w-full aspect-video"
+        />
+    );
+};
 
 const MilestoneSection = () => {
     const sectionRef = useRef<HTMLDivElement>(null);
@@ -79,24 +128,10 @@ const MilestoneSection = () => {
                                     href={card.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="block cursor-pointer hover:opacity-90 transition-opacity"
+                                    className="block w-full max-w-lg cursor-pointer hover:opacity-90 transition-opacity"
                                 >
                                     <GlowCard card={card} index={i}>
-                                        <picture>
-                                            {mobileMilestoneImages[card.imgPath] && (
-                                                <source
-                                                    media="(max-width: 640px)"
-                                                    srcSet={mobileMilestoneImages[card.imgPath]}
-                                                />
-                                            )}
-                                            <img
-                                                src={card.imgPath}
-                                                alt={card.title}
-                                                className="rounded-lg"
-                                                loading="lazy"
-                                                decoding="async"
-                                            />
-                                        </picture>
+                                        <MilestoneMedia card={card} />
 
                                     </GlowCard>
                                 </a>

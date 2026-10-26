@@ -1,8 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
 
 :root {
   --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
+}
+
+/* the layout is designed on 1920x1080. on bigger screens (2k / 4k / ultrawide) scale everything up with the screen,
+   all tailwind sizes are rem so they follow this. never smaller than the browser default (1rem) */
+html {
+  font-size: max(1rem, min(100vw / 120, 100vh / 60));
 }
 
 html,
@@ -58,14 +63,16 @@ section {
   }
 
   .hero-text {
-    @apply flex flex-col justify-center md:text-[60px] text-[30px] font-semibold relative z-30 pointer-events-none;
+    /* shrink a bit on small desktop monitors so it doesnt cover the model video */
+    @apply flex flex-col justify-center text-[1.875rem] md:text-[3.75rem] xl:text-[clamp(2.5rem,3.125vw,3.75rem)] font-semibold relative z-30 pointer-events-none;
 
     img {
       @apply size-8 md:size-10 object-contain;
     }
 
+    /* em so the name slider follow the text size */
     .slide {
-      @apply absolute pt-0 px-2 md:px-5 py-[30px] h-[48px] md:h-[78px] md:translate-y-1 translate-y-0 overflow-hidden;
+      @apply absolute pt-0 px-2 md:px-5 pb-[1em] md:pb-[0.5em] h-[1.6em] md:h-[1.3em] md:translate-y-1 translate-y-0 overflow-hidden;
     }
   }
 
@@ -138,11 +145,12 @@ section {
     }
 
 
+    /* min-w-0 + max-w-full: let the 4 images shrink on small monitors instead of going off screen */
     .first-project-wrapper {
-      @apply h-full flex flex-col justify-between xl:w-[60%];
+      @apply h-full flex flex-col justify-between xl:w-[60%] min-w-0;
 
       .image-wrapper {
-        @apply xl:h-[70vh] md:h-[50vh] h-96 relative xl:w-75;
+        @apply xl:h-[70vh] md:h-[50vh] h-96 relative xl:w-75 max-w-full;
         /* @apply xl:h-[70vh] md:h-[50vh] h-96 relative overflow-hidden rounded-xl; */
 
         img {
@@ -205,6 +213,12 @@ section {
 
   .tech-icon-wrapper {
     @apply flex justify-center items-center w-52 h-60 relative;
+
+    /* OrbitControls block every touch on the canvas, so on phone the page cant scroll when the finger is on an icon
+       (cant reach the footer). vertical swipe scroll the page, horizontal swipe still rotate the icon. mouse not affected */
+    * {
+      touch-action: pan-y !important;
+    }
   }
 
   .footer {
@@ -333,16 +347,15 @@ section {
 .card::before {
   position: absolute;
   content: "";
-  width: 100dvw;
+  width: 100%;
   height: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 12px;
+  border-radius: 0.75rem;
   border: 2px solid transparent;
   background: var(--gradient);
-  background-attachment: fixed;
-  mask: linear-gradient(#0000, #0000),
+  mask:linear-gradient(#0000, #0000),
     conic-gradient(from calc((var(--start) - 15) * 1deg),
       #ffffff1f 0deg,
       white,
@@ -367,6 +380,13 @@ section {
 
 .card:hover::before {
   opacity: 1;
+}
+
+/* fixed background make the browser repaint on every scroll, only use it on mouse devices (the glow is a hover effect anyway) */
+@media (hover: hover) and (pointer: fine) {
+  .card::before {
+    background-attachment: fixed;
+  }
 }
 
 .carousel {
@@ -407,8 +427,7 @@ section {
   .vrcCard:hover {
     transform: none;
     /* remove hover at phone */
-  will-change: transform;
-  /*reduce cpu load*/
+  }
 }
 
 @keyframes cardScroll {
@@ -429,5 +448,4 @@ section {
   to {
     transform: translateX(0);
   }
-}
 }
