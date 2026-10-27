@@ -95,7 +95,7 @@ const MilestoneSection = () => {
 
     return (
         <section ref={sectionRef} className="w-full py-20 relative overflow-hidden">
-            <TitleHeader titleString="Milestones" sub="When did you find me ?" />
+            <TitleHeader titleString="Milestones" sub="When did you know me ?" />
 
             <div className="mt-32 w-full mx-auto relative px-5">
 
